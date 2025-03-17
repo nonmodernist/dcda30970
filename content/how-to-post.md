@@ -1,11 +1,13 @@
 ---
-title: "How to post to this site"
-menu: "assignments"
-weight: 10
+title: "How to Post"
+menu: "main"
+weight: 40
 ---
 # How to post to this site
 
-## 1. Create your file
+When it's your turn to contribute a blog post, use these instructions:
+
+## 1. Create your .md file
 
 In VSC, create a new file and name it something unique having to do with your topic, for example, `ocean-swimming.md`. The file name determines the URL your post will eventually live at, so it needs to be appropriate, short, and unique. It also has to end in `.md`, which makes sure it's in Markdown. 
 
@@ -43,7 +45,7 @@ image = ['share.webp']
 
 As you write your post, you will want to use [Markdown](https://daringfireball.net/projects/markdown/syntax) to style the text and add links and images. 
 
-For example, putting an asterisk (*) on either side of a word or phrase will make that word italics.
+For example, putting an asterisk `*` on either side of a word or phrase will make that text italic.
 
 So this:
 
@@ -57,7 +59,7 @@ This is an activity adapted from Ingrid Burrington's *Networks of New York*.
 
 ---
 
-To create a link, wrap a word or phrase in square brackets `[ ]` and put the link in parentheses immediately after the closing bracket.
+To create a link, wrap a word or phrase in square brackets `[ ]` and put the link in parentheses `( )` immediately after the closing bracket.
 
 So this:
 
@@ -94,6 +96,18 @@ becomes this:
 
 The `alt` text should describe the image for sight-impaired people who may use a screen reader to access the internet. The caption should contextualize the image and include credit. 
 
-## 4. TBD
+## 4. Upload your .md file and images to Github
 
-More instructions go here. 
+Go to [our Github repository](https://github.com/nonmodernist/dcda30970) and navigate to the correct folder (also called a directory). Click the `Add File` button and then choose `Upload Files`. Follow the instructions on the page to upload your files. 
+
+**IMPORTANT:** your files must go into the correct folders for the site to work. 
+
+- Your `.md` file needs to go into [/content/blog](https://github.com/nonmodernist/dcda30970/tree/main/content/blog). 
+- If you have images, they need to go into [static](https://github.com/nonmodernist/dcda30970/tree/main/static). 
+
+Once you have committed your changes, the site should automatically rebuild and publish your post within a few minutes, thanks to some complicated stuff on the backend that Dr. Edwards has set up. 
+
+
+## 5. If you need to make changes
+
+If you've already uploaded your files and then realize that you need to change something, like a typo, you can navigate to your `.md` file in our repository and click the pencil icon on the right. This will let you edit the text right there and commit your changes. 

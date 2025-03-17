@@ -21,7 +21,9 @@ When I was still in elementary school, my mom got a job working at the America O
   caption="This was the kind of floppy disk we used to install America Online in the mid-90s"
 >}}
 
-I fell in love with the internet back when you still had to use command line prompts to tell DOS to launch the Windows GUI. If you don't know what any of that means, well... it was another era. I never thought of myself as a particularly technology-focused kid. I just loved reading websites and bulletin board posts from other parts of the world, from the comfort of the desk near the windows in my grandmother's tiny dining room. My mom was sitting there browsing the web once when a storm brought a tree down on the roof right above her. She was fine, and the roof was fixed eventually, and I don't think the internet even went out that day. 
+I fell in love with the internet back when you still had to use command line prompts to tell DOS to launch the Windows GUI. If you don't know what any of that means, well... it was another era. 
+
+I never thought of myself as a particularly technology-focused kid. I just loved reading websites and bulletin board posts from other parts of the world, from the comfort of the desk near the windows in my grandmother's tiny dining room. Once, my mom was sitting there browsing the web when a storm brought a tree down on the roof right above her. She was fine, and the roof was fixed eventually, and I don't think the internet even went out that day. 
 
 What's your technology origin story? Take a moment to conjure it up in your mind. Where does it take you back to? What do you see, smell, feel, hear?
 
@@ -32,11 +34,11 @@ This is an activity adapted from Ingrid Burrington's *Networks of New York*, a b
 
 ## Infrastructure
 
-The internet is one element of the [digital culture(s)](https://cdex.tcu.edu/digital-culture-data-analytics-dcda/) that now define much of our world. But how can we see it?
+The internet is one element of the [digital culture(s)](https://cdex.tcu.edu/digital-culture-data-analytics-dcda/) that now define much of our world. But how do we see it?
 
 Let's use this website you are reading as an example. To make it, I used a laptop (provided for me by work). I created the site with several pieces of software, which I downloaded from servers somewhere in the world, using my home internet. That internet connection arrives to my apartment through fiber optic cables, which were installed in my neighborhood less than two years ago. Those cables run underground parallel to the road, then snake into our apartment building in between the walls, up to our living room on the third floor. They end by plugging into a router installed about eight feet up our wall. The router broadcasts the wireless signal that lets my computer talk to other computers around the world.
 
-Once I created the site, I used the internet to send the data to Github's servers, which are distributed all over the world. Assuming the data is being stored on a server nearby, the most likely place is the San Antonio area, where Microsoft (who owns Github) [owns at least 12 parcels of land](https://sanantonioreport.org/medina-county-farmland-data-centers-strain/) and has built something like 8 data centers in the past 9 years, which required clearing both farmland and stands of oak trees. 
+Once I created the site, I used the internet to send the data to Github's servers, which are distributed all over the world. Assuming the data is being stored on a server nearby, the most likely place is the San Antonio area, where Microsoft (who owns Github) has acquired [at least 12 parcels of land](https://sanantonioreport.org/medina-county-farmland-data-centers-strain/) and has built something like 8 data centers in the past 9 years. Each new round of construction requires clearing both farmland and stands of oak trees. 
 
 {{< absfigure
   src="datacenter.jpeg"
@@ -44,11 +46,11 @@ Once I created the site, I used the internet to send the data to Github's server
   caption="Construction of a Microsoft data center near San Antonio in 2023. Credit: Scott Ball / San Antonio Report"
 >}}
 
-At some point, you, the person reading this, get on your computer and use your internet connection to tell the Github servers to send you the data that makes up my website, and so much of the process happens again in reverse. 
+At some point, you, the person reading this, get on your computer and use your internet connection to tell the Github servers to send you the data that I sent to them, and so much of the process happens again in reverse. 
 
 None of this would be possible without physical infrastructure—buildings, cables, computer chips, screens, wires, and much, much more. 
 
-Oh, and it all requires electricity, which gets into our houses, dorms, and data centers through other kinds of cables, after being generated at a power station somewhere nearby. The closest to us is the [Comanche Peak Nuclear Power Plant](https://en.wikipedia.org/wiki/Comanche_Peak_Nuclear_Power_Plant). It relies on water from Comanche Creek, stored in a nearby purpose-built reservoir, for cooling. This reservoir was renamed in 2022 to remove a derogatory slur for Native American women from its name. 
+And it all requires electricity, which gets into our houses, dorms, and data centers through other kinds of cables, after being generated at a power station somewhere nearby. The closest to us is the [Comanche Peak Nuclear Power Plant](https://en.wikipedia.org/wiki/Comanche_Peak_Nuclear_Power_Plant). It relies on water from Comanche Creek, stored in a nearby purpose-built reservoir, for cooling. This reservoir was renamed in 2022 to remove a derogatory slur for Native American women from its name. 
 
 So what is "infrastructure," and why are we studying it? I find this explanation helpful in answering both of those questions:
 

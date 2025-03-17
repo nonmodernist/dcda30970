@@ -1,7 +1,7 @@
 ---
-title: "Asking Good Discussion Questions"
-menu: "assignments"
-weight: 20
+title: "Good Questions"
+menu: "main"
+weight: 30
 ---
 # Asking Good Discussion Questions
 
