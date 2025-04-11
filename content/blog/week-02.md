@@ -10,7 +10,10 @@ tags = [
 image = ['share.webp']
 +++
 
-After our [introductory week](../week-01), the course is organized around the [four classical elements](https://en.wikipedia.org/wiki/Classical_element): fire, earth, air, and water. We begin with fire because it is the dominant conceptual metaphor of the climate crisis, and it is a [danger](https://www.fireweatheravalanche.org/fire/state/texas) we face very specifically here in North Central Texas. 
+After our [introductory week](../week-01), the course is organized around the [four classical elements](https://en.wikipedia.org/wiki/Classical_element): fire, earth, air, and water. We begin with fire because it is the dominant conceptual metaphor of the climate crisis. 
+
+
+Fire is a [danger](https://www.fireweatheravalanche.org/fire/state/texas) we face very specifically here in North Central Texas. 
 
 In the Western/Christian worldview, fire is a destructive and uncontrollable force, associated with the power of the gods. Prometheus.....
 
