@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
+  padding-bottom: 1rem;
   text-wrap: balance;
 }
 
@@ -49,12 +50,29 @@ h1 {
 
 a {
   text-decoration: none;
+  border-bottom: 1.5px dotted var(--deep-blue);
   color: var(--deep-blue);
   transition: color 0.3s;
 }
-
 a:hover {
-  color: var(--orange);
+  color: var(--teal);
+  border-bottom: 1.5px dashed var(--teal);
+}
+
+.external-link::after {
+  content: '↗'; /* Will be replaced with an icon */
+  display: inline-block;
+  width: .8em;
+  height: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 0.05em;
+  margin-right: .25em;
+  vertical-align: top;
+}
+
+ul {
+  padding-left: 2em;
 }
 
 img {

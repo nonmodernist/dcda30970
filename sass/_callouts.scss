@@ -1,0 +1,158 @@
+/* Base styles for all element callouts */
+.element-callout {
+    display: flex;
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: var(--font-body);
+  }
+  
+  .element-callout:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .element-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  
+  .element-icon .material-symbols-outlined {
+    font-size: 30px;
+  }
+  
+  .element-content {
+    flex: 1;
+  }
+  
+  .element-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-family: var(--font-heading);
+    padding-bottom: 0.5rem;
+  }
+  
+  .element-content p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  .element-link {
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+    border-bottom: 1.5px dotted;
+  }
+  
+  .element-link:hover {
+    border-bottom: 1.5px dashed;
+  }
+  
+  /* Fire theme */
+  .fire-theme {
+    background-color: rgba(230, 57, 70, 0.15);
+    border-left: 4px solid var(--red);
+  }
+  
+  .fire-theme .element-icon {
+    background-color: var(--red);
+    color: var(--text-light);
+  }
+  
+  .fire-theme .element-link {
+    color: var(--red);
+    border-bottom-color: var(--red);
+  }
+  
+  .fire-theme .element-link:hover {
+    color: #b71c1c;
+    border-bottom-color: #b71c1c;
+  }
+  
+  /* Earth theme */
+  .earth-theme {
+    background-color: rgba(42, 157, 143, 0.15);
+    border-left: 4px solid var(--teal);
+  }
+  
+  .earth-theme .element-icon {
+    background-color: var(--teal);
+    color: var(--text-light);
+  }
+  
+  .earth-theme .element-link {
+    color: var(--teal);
+    border-bottom-color: var(--teal);
+  }
+  
+  .earth-theme .element-link:hover {
+    color: #00695c;
+    border-bottom-color: #00695c;
+  }
+  
+  /* Air theme */
+  .air-theme {
+    background-color: rgba(142, 202, 230, 0.15);
+    border-left: 4px solid var(--turquoise);
+  }
+  
+  .air-theme .element-icon {
+    background-color: var(--turquoise);
+    color: var(--deep-blue);
+  }
+  
+  .air-theme .element-link {
+    color: var(--deep-blue);
+    border-bottom-color: var(--deep-blue);
+  }
+  
+  .air-theme .element-link:hover {
+    color: #01579b;
+    border-bottom-color: #01579b;
+  }
+  
+  /* Water theme */
+  .water-theme {
+    background-color: rgba(2, 48, 71, 0.15);
+    border-left: 4px solid var(--deep-blue);
+  }
+  
+  .water-theme .element-icon {
+    background-color: var(--deep-blue);
+    color: var(--text-light);
+  }
+  
+  .water-theme .element-link {
+    color: var(--deep-blue);
+    border-bottom-color: var(--deep-blue);
+  }
+  
+  .water-theme .element-link:hover {
+    color: #01579b;
+    border-bottom-color: #01579b;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .element-callout {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .element-icon {
+      margin-right: 0;
+      margin-bottom: 0.75rem;
+    }
+  }

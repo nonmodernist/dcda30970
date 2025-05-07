@@ -25,7 +25,7 @@ external_links_class = "external-link"
 external_links_target_blank = true
 smart_punctuation = true
 bottom_footnotes = true
-insert_anchor_links = "heading"
+insert_anchor_links = "none"
 
 
 

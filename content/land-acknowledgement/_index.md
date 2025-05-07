@@ -1,20 +1,17 @@
 ---
 title: "Land Acknowledgement"
-menu: "main"
-weight: 25
+description: "A land acknowledgement for the Wichita and Affiliated Tribes"
 ---
-
-# Land Acknowledgement
 
 TCU is founded on the traditional and unceded territories of the Wichita and Affiliated Tribes. Native peoples from these and other tribes have lived in these lands and across Texas since time immemorial and in the present day. We recognize and mark the painful history of genocide and forced removal of Native peoples, and we honor the many diverse indigenous people still connected to this place. TCU acknowledges and pays respect to the Wichita and Affiliated Tribes; the monument of acknowledgement is located between Reed and Jarvis. 
 
 But acknowledgement is not enough; as community members, we must move from acknowledgement to action. May this course and our classroom be a space where we can make these moves together.
 
-<img
+<!-- <img
   src="tawakoni-jim.jpg"
   alt="Two Native American men sit in chairs, with a small Native American boy between them. They are a family grouping of father, son, and grandson."
   caption="Tawakoni Jim (center) with his grandson and son. Historical photograph."
->
+> -->
 
 ## Honoring Indigenous Resistance
 

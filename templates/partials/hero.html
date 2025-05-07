@@ -1,0 +1,16 @@
+<!-- templates/partials/hero.html -->
+<div class="hero-section gradient-border">
+      <h1 class="hero-title">{{ section.title }}</h1>
+      {% if section.description %}
+        <h2 class="hero-subtitle">{{ section.description }}</h2>
+      {% endif %}
+      
+      {% if section.extra.quote %}
+        <blockquote class="hero-quote">
+          <p>{{ section.extra.quote.text }}</p>
+          {% if section.extra.quote.author %}
+            <cite>{{ section.extra.quote.author }}</cite>
+          {% endif %}
+        </blockquote>
+      {% endif %}
+</div>
