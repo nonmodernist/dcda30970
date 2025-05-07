@@ -1,0 +1,27 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<div class="cf ph3-ns">
+  <!-- Magazine-style header -->
+  <header class="w-100 mb4">
+    <h1 class="f1 lh-title tc mb3">{{ page.title }}</h1>
+    <div class="f4 tc lh-copy gray">{{ page.description }}</div>
+  </header>
+  
+  <!-- Magazine-style layout -->
+  <div class="cf">
+    <!-- Main article -->
+    <article class="fl w-100 w-two-thirds-ns pr4-ns">
+      <div class="measure-wide lh-copy">
+        {{ page.content | safe }}
+      </div>
+    </article>
+    
+    <!-- Sidebar -->
+    <aside class="fl w-100 w-third-ns">
+      <div class="bg-near-white pa3 mb3">
+      </div>
+    </aside>
+  </div>
+</div>
+{% endblock content %}

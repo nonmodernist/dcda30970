@@ -1,0 +1,87 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<!-- Navigation -->
+<header class="w-100 pa3 ph5-ns bb b--black-10">
+  <div class="flex items-center justify-between">
+    <h1 class="f2 fw7 ma0 dark-gray">DCDA 30970</h1>
+    <nav>
+      <ul class="list pl0 ma0 flex">
+        <li class="mr4"><a href="/" class="link dark-blue hover-blue">Home</a></li>
+        <li class="mr4"><a href="/syllabus" class="link dark-gray hover-blue">Syllabus</a></li>
+        <li class="mr4"><a href="/blog" class="link dark-gray hover-blue">Blog</a></li>
+        <li><a href="/resources" class="link dark-gray hover-blue">Resources</a></li>
+      </ul>
+    </nav>
+  </div>
+  <h2 class="f4 fw4 i mid-gray mt2 mb3">Special Topics: Digital Infrastructure & Climate Crisis</h2>
+</header>
+
+<!-- Separator Line -->
+<div class="w-100 bb b--black-10 mt1"></div>
+
+<!-- Hero Section with Image -->
+<section class="ph3 ph5-ns pv5">
+  <div class="cf">
+    <!-- Left side: Title, subtitle, and quote -->
+    <div class="fl w-100 w-60-l pr4-l">
+      <h1 class="f1 lh-title fw7 dark-red mt0 mb3">Digital Infrastructure and Climate Crisis</h1>
+      <h2 class="f3 fw4 i dark-gray mb4">Exploring the material reality behind digital abstractions</h2>
+      
+      <!-- Quote section -->
+      <blockquote class="bl bw2 b--dark-red pl4 ml0 mt4">
+        <p class="f4 lh-copy i mid-gray mb2">
+          "The internet is inextricably tied to the coming horrors of the climate crisis. It is both a major force behind that crisis and one of its likely casualties."
+        </p>
+        <footer class="f5">
+          —Kevin Lozano, "Can the Internet Survive Climate Change?"
+        </footer>
+      </blockquote>
+    </div>
+    
+    <!-- Right side: Feature Image -->
+    <div class="fl w-100 w-40-l mt4 mt0-l">
+      <div class="bg-light-yellow pa4 br2 tc relative" style="transform: rotate(2deg);">
+        <div class="f4 fw6 mb2">Course Edition</div>
+        <div class="f3 mb2">Fall 2025</div>
+        <div class="f4">Dr. Alexandra Edwards</div>
+      </div>
+      <img src="/path/to/your-image.jpg" alt="Digital infrastructure illustration" class="w-100 mt4 br2 shadow-4">
+    </div>
+  </div>
+</section>
+
+<!-- Separator Line -->
+<div class="w-100 bb b--black-10 mv5"></div>
+
+<!-- Main Content -->
+<section class="ph3 ph5-ns pb5">
+  <div class="cf">
+    <!-- Main column -->
+    <div class="fl w-100 w-70-l pr4-l">
+      <p class="f4 lh-copy">
+        We live in an era of contradictions: on the one hand, the infrastructures that make 
+        digital culture possible now criss-cross our planet and even surround it from space, 
+        and the tech industry's massive gamble on so-called "artificial intelligence" suggests 
+        that the physical resources dedicated to digital technologies will only increase in the 
+        near future. On the other hand, climate crisis is here, fueled by the energy-related 
+        emissions that digital infrastructure significantly contributes to, threatening the very 
+        material foundations of a digital society.
+      </p>
+    </div>
+    
+    <!-- Sidebar -->
+    <div class="fl w-100 w-30-l pl4-l">
+      <div class="ba b--black-10 br2 pa4 mb4">
+        <h3 class="f4 fw6 mb3">Course Philosophy</h3>
+        <p class="lh-copy">
+          This course operates at the intersection of theory and practice, challenging students to 
+          think critically about digital infrastructure while developing practical skills to address 
+          the environmental impacts of technology.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

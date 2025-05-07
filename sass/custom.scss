@@ -1,0 +1,76 @@
+/* Custom styles to complement Tachyons */
+
+/* Typography */
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Custom Colors */
+  .dark-red {
+    color: #e15656;
+  }
+  
+  .b--dark-red {
+    border-color: #e15656;
+  }
+  
+  /* Hero Section */
+  blockquote {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Course Info Card */
+  .course-card {
+    transform: rotate(2deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: rotate(0deg);
+  }
+  
+  /* Layout helpers */
+  .max-width-large {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 60em) {
+    .hero-image {
+      margin-top: 2rem;
+    }
+  }
+  
+  /* Custom image container */
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  
+  .image-container img {
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Additional styling for the course info card */
+  .course-info-card {
+    background-color: #fef9e7;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    transform: rotate(2deg);
+    transition: all 0.3s ease;
+  }
+  
+  .course-info-card:hover {
+    transform: rotate(0deg);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }

@@ -1,3 +1,0 @@
-+++
-theme = "home.html"
-+++
