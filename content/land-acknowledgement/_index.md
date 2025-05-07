@@ -43,13 +43,11 @@ As we examine the materiality of digital culture and its relationship to climate
 
 ## Local Resources
 
-- [Wichita and Affiliated Tribes Official Website](https://wichitatribe.com/)
+- [Wichita and Affiliated Tribes Official Website]
 - TCU's Native American Monument (located between Reed and Jarvis Halls)
-- [Native American and Indigenous Peoples Day Symposium at TCU](https://www.tcu.edu/news/2022/stories/native-american-and-indigenous-peoples-day-symposium-takes-place-oct-10.php)
-- [The Amon Carter Museum's Collection of Native American Art](https://www.cartermuseum.org/collection/native-american-art)
+- [Native American and Indigenous Peoples Day Symposium at TCU]
 
 ## Digital Resources
 
 - [Native Land Digital](https://native-land.ca/) - Interactive map of Indigenous territories
-- [Indigenous Digital Archive](https://omeka.dlcs-ida.org/s/ida/page/home) - Digitized records related to U.S. Indian policy
-- [Indigenous Values Initiative](https://indigenousvalues.org/) - Resources on indigenous environmental leadership
+

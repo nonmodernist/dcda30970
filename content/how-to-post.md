@@ -12,7 +12,7 @@ In VSC, create a new file and name it something unique having to do with your to
 
 ## 2. Add your front matter
 
-The [front matter](https://gohugo.io/content-management/front-matter/) is a little piece of code right at the beginning that contains the metadata for your post. It determines things like the title, date, author, and tags that will be shown on the site. 
+The [front matter] is a little piece of code right at the beginning that contains the metadata for your post. It determines things like the title, date, author, and tags that will be shown on the site. 
 
 Your front matter needs to contain:
 
@@ -72,7 +72,7 @@ This is an [example link](http://example.org).
 
 ---
 
-To add an image, you'll need to save the image with a short, unique file name, such as `fire.jpg`. Then you can use our site's [shortcode](https://gohugo.io/content-management/shortcodes/#article) to call the image and record the metadata. 
+To add an image, you'll need to save the image with a short, unique file name, such as `fire.jpg`. Then you can use our site's [shortcode] to call the image and record the metadata. 
 
 So this:
 
@@ -100,8 +100,8 @@ Go to [our Github repository](https://github.com/nonmodernist/dcda30970) and nav
 
 **IMPORTANT:** your files must go into the correct folders for the site to work. 
 
-- Your `.md` file needs to go into [/content/blog](https://github.com/nonmodernist/dcda30970/tree/main/content/blog). 
-- If you have images, they need to go into [static](https://github.com/nonmodernist/dcda30970/tree/main/static). 
+- Your `.md` file needs to go into [/content/blog]
+- If you have images, they need to go into [static]. 
 
 Once you have committed your changes, the site should automatically rebuild and publish your post within a few minutes, thanks to some complicated stuff on the backend that Dr. Edwards has set up. 
 
