@@ -1,0 +1,229 @@
+.timeline-container {
+    font-family: 'Merriweather', 'Source Serif 4', serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: 
+#333333;
+    background-color: 
+#F8F4E3;
+    line-height: 1.6;
+  }
+
+  .timeline {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 3px;
+    background: linear-gradient(to bottom, 
+        #FFB703, /* Introduction - yellow */
+        #E63946, /* Fire - red */
+        #2A9D8F, /* Earth - teal */
+        #8ECAE6, /* Air - turquoise */
+        #023047, /* Water - deep blue */
+        #FF6B35  /* Conclusion - orange */
+    );
+  }
+
+  .timeline-section {
+    margin-bottom: 40px;
+  }
+
+  .element-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .element-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;  /* shifted 1px to the right */
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .element-title {
+    font-family: 'Montserrat', 'Cal Sans', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0;
+    color: 
+#333333;
+margin-left: 55px;
+  }
+
+  .timeline-weeks {
+    margin-left: 55px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  .week-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding: 15px;
+    background-color: 
+#F8F4E3;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-left-width: 5px;
+    border-left-style: solid;
+  }
+
+  .week-item.intro {
+    border-left-color: rgba(255, 183, 3, 0.85);
+  }
+
+  .week-item.fire {
+    border-left-color: rgba(230, 57, 70, 0.85);
+  }
+
+  .week-item.earth {
+    border-left-color: rgba(42, 157, 143, 0.85);
+  }
+
+  .week-item.air {
+    border-left-color: rgba(142, 202, 230, 0.95);
+  }
+
+  .week-item.water {
+    border-left-color: rgba(2, 48, 71, 0.85);
+  }
+
+  .week-item.conclusion {
+    border-left-color: rgba(255, 107, 53, 0.85);
+  }
+
+  .week-item::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 20%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+
+  .week-title {
+    font-family: 'Montserrat', 'Cal Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .week-content {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+
+  .deadline {
+    background-color: rgba(248, 244, 227, 0.592);
+    border-left: 4px solid 
+var(--light-bg);
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    font-style: italic;
+  }
+
+  /* Element-specific colors (muted versions) */
+  .intro {
+    background-color: rgba(255, 183, 3, 0.45);
+    color: var(--text-dark);
+  }
+
+  .fire {
+    background-color: rgba(230, 57, 70, 0.35);
+    color: var(--text-dark);
+  }
+
+  .earth {
+    background-color: rgba(42, 157, 143, 0.45);
+    color: var(--text-dark);
+  }
+
+  .air {
+    background-color: rgba(142, 202, 230, 0.45);
+    color: var(--text-dark);
+  }
+
+  .water {
+    background-color: rgba(2, 48, 71, 0.20);
+    color: var(--text-dark);
+  }
+
+  .conclusion {
+    background-color: rgba(255, 107, 53, 0.45);
+    color: var(--text-dark);
+  }
+
+  /* Remove border color classes as we're no longer using the secondary line */
+
+  .week-item.intro::before {
+    background-color: 
+#FFB703;
+  }
+
+  .week-item.fire::before {
+    background-color: 
+#E63946;
+  }
+
+  .week-item.earth::before {
+    background-color: 
+#2A9D8F;
+  }
+
+  .week-item.air::before {
+    background-color: 
+#8ECAE6;
+  }
+
+  .week-item.water::before {
+    background-color: 
+#023047;
+  }
+
+  .week-item.conclusion::before {
+    background-color: 
+#FF6B35;
+  }
+
+  @media (max-width: 768px) {
+    .timeline-container {
+      padding: 10px;
+    }
+
+    .timeline-weeks {
+      margin-left: 40px;
+      padding-left: 15px;
+    }
+
+    .element-title {
+      font-size: 20px;
+    }
+
+    .week-title {
+      font-size: 16px;
+    }
+  }

@@ -1,0 +1,95 @@
+{% if style %}
+  {% set divider_style = style %}
+{% else %}
+  {% set divider_style = "default" %}
+{% endif %}
+
+{% if divider_style == "default" %}
+<div class="divider center-divider">
+    <svg viewBox="0 0 96 8">
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.7"></stop>
+        <stop offset="50%" stop-color="#EF4444" stop-opacity="0.7"></stop>
+        <stop offset="100%" stop-color="#0E7490" stop-opacity="0.7"></stop>
+      </linearGradient>
+      <rect x="0" y="3" width="96" height="2" rx="1" fill="url(#gradient)"></rect>
+      <circle cx="48" cy="4" r="4" fill="#EF4444" opacity="0.7"></circle>
+    </svg>
+  </div>
+{% elif divider_style == "waves" %}
+<div class="divider wave-divider">
+    <svg viewBox="0 0 1200 24" preserveAspectRatio="none">
+      <path 
+        d="M0,12 C150,20 350,5 500,15 C650,25 750,8 900,18 C1050,24 1200,14 1200,14" 
+        stroke="#F59E0B"
+        stroke-width="1.5"
+        fill="none"
+        opacity="0.7">
+      </path>
+      <path 
+        d="M0,6 C150,14 350,2 500,10 C650,18 800,4 950,12 C1100,20 1200,8 1200,8" 
+        stroke="#EF4444"
+        stroke-width="1"
+        fill="none"
+        opacity="0.5">
+      </path>
+      <path 
+        d="M0,18 C150,10 300,20 450,12 C600,4 750,16 900,8 C1050,0 1200,10 1200,10" 
+        stroke="#0E7490"
+        stroke-width="1"
+        fill="none"
+        opacity="0.6">
+      </path>
+    </svg>
+  </div>
+
+{% elif divider_style == "geo" %}
+<div class="divider geo-divider">
+    <div class="geo-lines">
+      <div class="geo-line geo-line-1"></div>
+      <div class="geo-line geo-line-2"></div>
+      <div class="geo-line geo-line-3"></div>
+      <div class="geo-line geo-line-4"></div>
+      <div class="geo-line geo-line-5"></div>
+      <div class="geo-line geo-line-6"></div>
+      <div class="geo-line geo-line-7"></div>
+      <div class="geo-line geo-line-8"></div>
+      <div class="geo-line geo-line-9"></div>
+      <div class="geo-line geo-line-10"></div>
+      <div class="geo-line geo-line-11"></div>
+      <div class="geo-line geo-line-12"></div>
+      <div class="geo-line geo-line-13"></div>
+      <div class="geo-line geo-line-14"></div>
+      <div class="geo-line geo-line-15"></div>
+    </div>
+  </div>
+
+{% elif divider_style == "dots" %}
+<div class="divider dots-divider">
+    <div class="dots-container">
+      <div class="dot"></div>
+      <div class="dash"></div>
+      <div class="dot red"></div>
+      <div class="dash teal"></div>
+      <div class="dot orange"></div>
+      <div class="dash red"></div>
+      <div class="dot teal"></div>
+    </div>
+  </div>
+{% elif divider_style == "gradient" %}
+<div class="divider gradient-divider">
+    <div class="gradient-line"></div>
+  </div>
+{% else %}
+<div class="divider center-divider">
+    <svg viewBox="0 0 96 8">
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.7"></stop>
+        <stop offset="50%" stop-color="#EF4444" stop-opacity="0.7"></stop>
+        <stop offset="100%" stop-color="#0E7490" stop-opacity="0.7"></stop>
+      </linearGradient>
+      <rect x="0" y="3" width="96" height="2" rx="1" fill="url(#gradient)"></rect>
+      <circle cx="48" cy="4" r="4" fill="#EF4444" opacity="0.7"></circle>
+    </svg>
+  </div>
+{% endif %}

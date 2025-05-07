@@ -1,0 +1,16 @@
+{% macro render_image(src, alt, caption) %}
+<figure>
+    <img src="{{ src }}" alt="{{ alt }}">
+    {% if caption %}
+    <figcaption>{{ caption | safe }}</figcaption>
+    {% endif %}
+</figure>
+{% endmacro %}
+
+{% macro render_tag_list(tags) %}
+<div class="tags">
+    {% for tag in tags %}
+    <a href="{{ config.base_url }}/tags/{{ tag | slugify }}" class="tag">{{ tag }}</a>
+    {% endfor %}
+</div>
+{% endmacro %}

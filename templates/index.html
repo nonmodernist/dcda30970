@@ -1,87 +1,216 @@
 {% extends "_base.html" %}
 
 {% block content %}
-<!-- Navigation -->
-<header class="w-100 pa3 ph5-ns bb b--black-10">
-  <div class="flex items-center justify-between">
-    <h1 class="f2 fw7 ma0 dark-gray">DCDA 30970</h1>
-    <nav>
-      <ul class="list pl0 ma0 flex">
-        <li class="mr4"><a href="/" class="link dark-blue hover-blue">Home</a></li>
-        <li class="mr4"><a href="/syllabus" class="link dark-gray hover-blue">Syllabus</a></li>
-        <li class="mr4"><a href="/blog" class="link dark-gray hover-blue">Blog</a></li>
-        <li><a href="/resources" class="link dark-gray hover-blue">Resources</a></li>
-      </ul>
+<header class="site-header">
+    <div class="site-branding">
+        <h1 class="site-title">DCDA 30970</h1>
+        <p class="site-subtitle">Special Topics: Digital Infrastructure & Climate Crisis</p>
+    </div>
+
+<!-- BEGIN SITE NAV -->
+    <nav class="site-nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/syllabus">Syllabus</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/resources">Resources</a></li>
+        </ul>
     </nav>
-  </div>
-  <h2 class="f4 fw4 i mid-gray mt2 mb3">Special Topics: Digital Infrastructure & Climate Crisis</h2>
 </header>
 
-<!-- Separator Line -->
-<div class="w-100 bb b--black-10 mt1"></div>
+<main>
+    <div class="magazine-layout">
+       
+<!-- BEGIN HERO SECTION  -->
+        <div class="hero-section gradient-border">
+            <h1 class="hero-title">Digital Infrastructure and Climate Crisis</h1>
+            <h2 class="hero-subtitle">Exploring the material reality behind digital abstractions</h2>
+            
+            <blockquote class="hero-quote">
+                <p>"The internet is inextricably tied to the coming horrors of the climate crisis. It is both a major force behind that crisis and one of its likely casualties."</p>
+                <cite>—Kevin Lozano, "Can the Internet Survive Climate Change?"</cite>
+            </blockquote>
+        </div>
+        
+<!-- BEGIN MAIN CONTENT -->
+        <div class="main-content">
+            <p>We live in an era of contradictions: on the one hand, the infrastructures that make digital culture possible now criss-cross our planet and even surround it from space, and the tech industry's massive gamble on so-called "artificial intelligence" suggests that the physical resources dedicated to digital technologies will only increase in the near future. On the other hand, climate crisis is here, fueled by the energy-related emissions created by countries and communities with the most digital connectivity.</p>
+            
+            <p>This crisis threatens to destroy the digital technology infrastructures we have invested so much in over the past 50-plus years. As the planet warms, power cables melt; as sea levels rise, internet infrastructure is drowned. Power plants and data centers are threatened by unpredictable natural disasters, while the mining required for batteries and computer chips destroys ecosystems and destabilizes global politics.</p>
+            
+            <p>So what can we do? A lot, actually, but it starts with understanding our current situation. In this special topics course, students will investigate the connections between digital infrastructure and climate crisis in a solutions-oriented framework.</p>
 
-<!-- Hero Section with Image -->
-<section class="ph3 ph5-ns pv5">
-  <div class="cf">
-    <!-- Left side: Title, subtitle, and quote -->
-    <div class="fl w-100 w-60-l pr4-l">
-      <h1 class="f1 lh-title fw7 dark-red mt0 mb3">Digital Infrastructure and Climate Crisis</h1>
-      <h2 class="f3 fw4 i dark-gray mb4">Exploring the material reality behind digital abstractions</h2>
+            <div class="divider geo-divider">
+                <div class="geo-lines">
+                    <div class="geo-line geo-line-1"></div>
+                    <div class="geo-line geo-line-2"></div>
+                    <div class="geo-line geo-line-3"></div>
+                    <div class="geo-line geo-line-4"></div>
+                    <div class="geo-line geo-line-5"></div>
+                    <div class="geo-line geo-line-6"></div>
+                    <div class="geo-line geo-line-7"></div>
+                    <div class="geo-line geo-line-8"></div>
+                    <div class="geo-line geo-line-9"></div>
+                    <div class="geo-line geo-line-10"></div>
+                    <div class="geo-line geo-line-11"></div>
+                    <div class="geo-line geo-line-12"></div>
+                    <div class="geo-line geo-line-13"></div>
+                    <div class="geo-line geo-line-14"></div>
+                    <div class="geo-line geo-line-15"></div>
+                </div>
+            </div>
+
+            <h2>Course Philosophy</h2>
+            <p>This course operates at the intersection of theory and practice, challenging students to think critically about digital infrastructure while developing actionable responses to the climate crisis.</p>
+        </div>
+        
+<!-- BEGIN SIDEBAR -->
+
+        <aside class="sidebar">
+            <div class="sidebar-image">
+                <img src="images/tower-crows.png" alt="Three sleek black crows with striking orange eyes perched on different levels of a cellular tower or communications antenna. The birds are silhouetted against a dramatic gradient background that transitions from deep blue at the top to vibrant orange at the bottom. The tower features yellow rectangular panels and copper-colored metal components. The illustration has a stylized, graphic quality with a textured, grainy overlay that gives it a vintage poster-like appearance.">
+            </div>
+            <div class="sidebar-content">
+                <p>This image is based on something I saw on campus last year: three crows perched on the cell signal repeater on top of Jarvis.</p>
+                <p>I think of these three crows as sentinels for our class. Like ravens in ancient stories who carried messages between worlds, these birds watch over our work from their technological roost. They eavesdrop on our conversations.</p>
+
+            </div>
+        </aside>
+    </div>
+
+
+
+<div class="divider gradient-divider">
+    <div class="gradient-line"></div>
+  </div>
+
+  <!-- BEGIN TIMELINE -->
+    <div class="timeline-container">
+        <div class="timeline">
+          <!-- Introduction -->
+          <div class="timeline-section">
+            <div class="element-header">
+              <!-- <div class="element-icon intro">
+                <span>1</span>
+              </div> -->
+              <h2 class="element-title">Introduction</h2>
+            </div>
+            <div class="timeline-weeks intro-border">
+              <div class="week-item intro">
+                <div class="week-title">Week 1: Introduction / Infrastructure</div>
+                <div class="week-content">Aug 19 - Exploring the foundations of digital infrastructure</div>
+              </div>
+            </div>
+          </div>
       
-      <!-- Quote section -->
-      <blockquote class="bl bw2 b--dark-red pl4 ml0 mt4">
-        <p class="f4 lh-copy i mid-gray mb2">
-          "The internet is inextricably tied to the coming horrors of the climate crisis. It is both a major force behind that crisis and one of its likely casualties."
-        </p>
-        <footer class="f5">
-          —Kevin Lozano, "Can the Internet Survive Climate Change?"
-        </footer>
-      </blockquote>
-    </div>
-    
-    <!-- Right side: Feature Image -->
-    <div class="fl w-100 w-40-l mt4 mt0-l">
-      <div class="bg-light-yellow pa4 br2 tc relative" style="transform: rotate(2deg);">
-        <div class="f4 fw6 mb2">Course Edition</div>
-        <div class="f3 mb2">Fall 2025</div>
-        <div class="f4">Dr. Alexandra Edwards</div>
+          <!-- Fire Section -->
+          <div class="timeline-section">
+            <div class="element-header">
+              <h2 class="element-title">Fire</h2>
+            </div>
+            <div class="timeline-weeks fire-border">
+              <div class="week-item fire">
+                <div class="week-title">Week 2: Fire</div>
+                <div class="week-content">Aug 26 - Exploring fire as a conceptual metaphor for climate crisis</div>
+                <div class="deadline">Blog posts and discussion leads begin this week</div>
+              </div>
+              <div class="week-item fire">
+                <div class="week-title">Week 3: Crisis</div>
+                <div class="week-content">Sept 2 - Understanding the nature of crisis</div>
+              </div>
+              <div class="week-item fire">
+                <div class="week-title">Week 4: Mapping</div>
+                <div class="week-content">Sept 9 - Visualizing and mapping digital infrastructure</div>
+                <div class="deadline">Collaborative Mapping Project due by Sunday, Sept 14</div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Earth Section -->
+          <div class="timeline-section">
+            <div class="element-header">
+              <h2 class="element-title">Earth</h2>
+            </div>
+            <div class="timeline-weeks earth-border">
+              <div class="week-item earth">
+                <div class="week-title">Week 5: Earth</div>
+                <div class="week-content">Sept 16 - Examining the material reality beneath digital technologies</div>
+                <div class="deadline">Essay Stage 1 due by Friday, Sept 19</div>
+              </div>
+              <div class="week-item earth">
+                <div class="week-title">Week 6: Silicon</div>
+                <div class="week-content">Sept 23 - Investigating the foundation of computing hardware</div>
+                <div class="deadline">Drop deadline: Sept 24</div>
+              </div>
+              <div class="week-item earth">
+                <div class="week-title">Week 7: Lithium</div>
+                <div class="week-content">Sept 30 - Exploring battery technology and its environmental impact</div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Air Section -->
+          <div class="timeline-section">
+            <div class="element-header">
+              <h2 class="element-title">Air</h2>
+            </div>
+            <div class="timeline-weeks air-border">
+              <div class="week-item air">
+                <div class="week-title">Week 8: Air</div>
+                <div class="week-content">Oct 7 - Examining wireless infrastructures and atmospheric impacts</div>
+              </div>
+              <div class="week-item air">
+                <div class="week-title">Week 9: Breath</div>
+                <div class="week-content">Oct 14 - Exploring personal connections to air and atmosphere</div>
+                <div class="deadline">Essay Stage 2 due by Friday, Oct 17</div>
+              </div>
+              <div class="week-item air">
+                <div class="week-title">Week 10: Clouds</div>
+                <div class="week-content">Oct 21 - Understanding cloud computing and its environmental costs</div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Water Section -->
+          <div class="timeline-section">
+            <div class="element-header">
+              <h2 class="element-title">Water</h2>
+            </div>
+            <div class="timeline-weeks water-border">
+              <div class="week-item water">
+                <div class="week-title">Week 11: Water</div>
+                <div class="week-content">Oct 28 - Exploring water's role in digital infrastructure</div>
+              </div>
+              <div class="week-item water">
+                <div class="week-title">Week 12: Stream(ing)</div>
+                <div class="week-content">Nov 4 - Examining the environmental impact of streaming media</div>
+                <div class="deadline">Withdrawal deadline: Nov 7</div>
+              </div>
+              <div class="week-item water">
+                <div class="week-title">Week 13: Undrowned</div>
+                <div class="week-content">Nov 11 - Considering resilience strategies for rising waters</div>
+                <div class="deadline">Final Essay stage due by Friday, Nov 14</div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Conclusion Section -->
+          <div class="timeline-section">
+            <div class="element-header">
+              <h2 class="element-title">Conclusion</h2>
+            </div>
+            <div class="timeline-weeks conclusion-border">
+              <div class="week-item conclusion">
+                <div class="week-title">Week 14: Collaborate</div>
+                <div class="week-content">Nov 18 - Working together on solutions-oriented projects</div>
+              </div>
+              <div class="week-item conclusion">
+                <div class="week-title">Week 15: Conclusion</div>
+                <div class="week-content">Dec 2 - Synthesizing course themes and looking forward</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <img src="/path/to/your-image.jpg" alt="Digital infrastructure illustration" class="w-100 mt4 br2 shadow-4">
-    </div>
-  </div>
-</section>
-
-<!-- Separator Line -->
-<div class="w-100 bb b--black-10 mv5"></div>
-
-<!-- Main Content -->
-<section class="ph3 ph5-ns pb5">
-  <div class="cf">
-    <!-- Main column -->
-    <div class="fl w-100 w-70-l pr4-l">
-      <p class="f4 lh-copy">
-        We live in an era of contradictions: on the one hand, the infrastructures that make 
-        digital culture possible now criss-cross our planet and even surround it from space, 
-        and the tech industry's massive gamble on so-called "artificial intelligence" suggests 
-        that the physical resources dedicated to digital technologies will only increase in the 
-        near future. On the other hand, climate crisis is here, fueled by the energy-related 
-        emissions that digital infrastructure significantly contributes to, threatening the very 
-        material foundations of a digital society.
-      </p>
-    </div>
-    
-    <!-- Sidebar -->
-    <div class="fl w-100 w-30-l pl4-l">
-      <div class="ba b--black-10 br2 pa4 mb4">
-        <h3 class="f4 fw6 mb3">Course Philosophy</h3>
-        <p class="lh-copy">
-          This course operates at the intersection of theory and practice, challenging students to 
-          think critically about digital infrastructure while developing practical skills to address 
-          the environmental impacts of technology.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
+</main>
 {% endblock content %}
