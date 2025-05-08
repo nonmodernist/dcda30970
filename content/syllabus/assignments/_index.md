@@ -1,3 +1,5 @@
 +++
-title = "Assignments"
+template = "book.html"
 +++
+
+### Assignments
