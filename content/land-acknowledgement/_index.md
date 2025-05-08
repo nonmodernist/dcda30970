@@ -1,12 +1,15 @@
 ---
 title: "Land Acknowledgement"
-description: "A land acknowledgement for the Wichita and Affiliated Tribes"
+template: "book.html"
+extra:
+  toc: true
 ---
 
 TCU is founded on the traditional and unceded territories of the Wichita and Affiliated Tribes. Native peoples from these and other tribes have lived in these lands and across Texas since time immemorial and in the present day. We recognize and mark the painful history of genocide and forced removal of Native peoples, and we honor the many diverse indigenous people still connected to this place. TCU acknowledges and pays respect to the Wichita and Affiliated Tribes; the monument of acknowledgement is located between Reed and Jarvis. 
 
-But acknowledgement is not enough; as community members, we must move from acknowledgement to action. May this course and our classroom be a space where we can make these moves together.
+The Wichita and Affiliated Tribes are a confederation of tribes that include the Waco, Tawakoni, and Taovaya. The Wichita people have lived in this region for thousands of years, and their history is deeply intertwined with the land. 
 
+We also acknowledge the many other tribes and nations who have lived in this area, including the Caddo Nation, the Comanche Nation, the Kiowa Tribe, and the Osage Nation.
 <!-- <img
   src="tawakoni-jim.jpg"
   alt="Two Native American men sit in chairs, with a small Native American boy between them. They are a family grouping of father, son, and grandson."
@@ -23,13 +26,10 @@ In this course, we especially honor the legacy of Tawakoni Jim (pictured above w
 
 The connections between land acknowledgment and our course on digital infrastructure and climate crisis are profound:
 
-1. **Physical Infrastructure**: The digital networks we study exist on and within indigenous lands. Server farms, data centers, fiber optic cables, and cell towers all occupy physical space on territories with deep indigenous histories.
-
-2. **Resource Extraction**: The minerals needed for our devices—lithium, cobalt, copper, gold—are often extracted from lands where indigenous peoples continue to face displacement and environmental devastation.
-
-3. **Environmental Impact**: The climate crisis disproportionately affects indigenous communities, while many climate solutions draw on indigenous knowledge systems that have been developed over millennia.
-
-4. **Alternative Relationships**: Indigenous perspectives offer alternatives to extractive technological models, suggesting ways of relating to land and resources that prioritize sustainability and reciprocity.
+- **Physical Infrastructure**: The digital networks we study exist on and within indigenous lands. Server farms, data centers, fiber optic cables, and cell towers all occupy physical space on territories with deep indigenous histories.
+- **Resource Extraction**: The minerals needed for our devices—lithium, cobalt, copper, gold—are often extracted from lands where indigenous peoples continue to face displacement and environmental devastation.
+- **Environmental Impact**: The climate crisis disproportionately affects indigenous communities, while many climate solutions draw on indigenous knowledge systems that have been developed over millennia.
+- **Alternative Relationships**: Indigenous perspectives offer alternatives to extractive technological models, suggesting ways of relating to land and resources that prioritize sustainability and reciprocity.
 
 ## Moving Beyond Acknowledgment
 
@@ -43,9 +43,9 @@ As we examine the materiality of digital culture and its relationship to climate
 
 ## Local Resources
 
-- [Wichita and Affiliated Tribes Official Website]
-- TCU's Native American Monument (located between Reed and Jarvis Halls)
-- [Native American and Indigenous Peoples Day Symposium at TCU]
+- [Wichita and Affiliated Tribes Official Website](https://wichitatribe.com)
+- [TCU's Native American Monument](https://www.tcu.edu/native-american-indigenous-peoples/about/monument.php)
+- [Native American and Indigenous Peoples Day Symposium at TCU](https://stories.tcu.edu/native-american-indigenous-peoples-day)
 
 ## Digital Resources
 

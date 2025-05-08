@@ -1,26 +1,10 @@
 ---
 title: "Course Policies"
 description: "Important information about attendance, late work, and communication"
-section_style: "fire"  # Optional: fire, earth, air, water
-toc: true  # Include table of contents
-sidebar:
-  - title: "Important Dates"
-    type: "important"
-    content: "Drop deadline: September 24\nWithdrawal deadline: November 7"
-  - title: "Office Hours"
-    type: "info"
-    content: "Monday & Wednesday 2-3pm\nFriday by appointment"
+template: "book.html"
 ---
 
-<div class="policies-header">
-  <h1>Course Policies</h1>
-  <button id="print-policies" class="print-button" onclick="expandAllAndPrint()">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-    Print All Policies
-  </button>
-</div>
-
-<p class="policies-intro">This page contains important policies for DCDA 30970. Click on any section to expand and read the full policy.</p>
+This page contains important policies for DCDA 30970. Click on any section to expand and read the full policy.
 
 <details class="policy-support">
 <summary><span class="material-symbols-outlined">memory</span><span class="policy-title"> Student Access & Accommodations</span></summary>

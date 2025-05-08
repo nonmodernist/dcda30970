@@ -1,0 +1,345 @@
+/* Book Layout Styles */
+.book-layout {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Book Header */
+.book-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.book-header::after {
+  content: '';
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--teal), var(--orange), var(--yellow), transparent);
+}
+
+.book-title {
+  font-size: 2.5rem;
+  color: var(--deep-blue);
+  margin-bottom: 0.5rem;
+}
+
+.book-description {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  opacity: 0.8;
+}
+
+/* Book Container - this creates the two-column layout */
+.book-container {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(0, 3fr);
+  gap: 2.5rem;
+}
+
+/* When TOC is not present, span full width */
+.book-container:not(:has(.book-toc)) .book-content {
+  grid-column: 1 / -1;
+  max-width: 700px; /* Control reading line length */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Table of Contents */
+.book-toc {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+.toc-container {
+  padding: 1.5rem;
+  background-color: rgba(248, 244, 227, 0.5);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 4px 4px 0;
+}
+
+.toc-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.toc-list a {
+  color: var(--deep-blue);
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+  transition: all 0.3s ease;
+}
+
+.toc-list a:hover {
+  border-bottom-color: var(--teal);
+}
+
+.h3-item {
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Book Content */
+.book-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.book-content p {
+  margin-bottom: 1.5rem;
+}
+
+.book-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--deep-blue);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 0.5rem;
+}
+
+.book-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+  color: var(--teal);
+}
+
+.book-content ul, 
+.book-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.8rem;
+}
+
+.book-content li {
+  margin-bottom: 0.5rem;
+}
+
+.book-content blockquote {
+  border-left: 4px solid var(--yellow);
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--text-dark);
+  opacity: 0.8;
+}
+
+.book-content pre {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  padding: 1.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.book-content code {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+.book-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.book-content figure {
+  margin: 2rem 0;
+}
+
+.book-content figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--text-dark);
+  opacity: 0.7;
+  margin-top: 0.75rem;
+}
+
+/* Chapter opener styling */
+.chapter-opener {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.chapter-number {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  color: rgba(42, 157, 143, 0.15);
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+  z-index: -1;
+  line-height: 1;
+}
+
+.chapter-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.chapter-subtitle {
+  font-style: italic;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Pull quotes */
+.pull-quote {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: 1.5rem 0;
+  margin: 2rem 0;
+  position: relative;
+  color: var(--deep-blue);
+}
+
+.pull-quote::before,
+.pull-quote::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  height: 1px;
+  background: linear-gradient(to right, var(--teal), transparent);
+}
+
+.pull-quote::before {
+  top: 0;
+}
+
+.pull-quote::after {
+  bottom: 0;
+}
+
+/* First letter styling */
+.book-content p:first-of-type::first-letter {
+font-size: 2.5rem;
+float: left;
+line-height: .6;
+margin-right: .2rem;
+color: var(--teal);
+font-family: var(--font-body);
+}
+
+/* Book Footer */
+.book-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  opacity: 0.6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.book-navigation {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.prev-link,
+.next-link {
+  display: inline-block;
+  color: var(--deep-blue);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.prev-link:hover,
+.next-link:hover {
+  color: var(--teal);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .book-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .book-toc {
+    position: relative;
+    top: 0;
+    max-height: none;
+    margin-bottom: 2rem;
+  }
+  
+  .book-title {
+    font-size: 2rem;
+  }
+  
+  .book-content {
+    font-size: 1rem;
+  }
+  
+  .book-content p:first-of-type::first-letter {
+    font-size: 2rem;
+  }
+}
+
+
+/* SIDENOTES */
+.book-content {
+  position: relative;
+}
+
+.sidenote-ref {
+  vertical-align: super;
+  font-size: 0.7em;
+  color: var(--teal);
+  cursor: pointer;
+}
+
+.sidenote {
+  position: absolute;
+  right: -250px;
+  width: 200px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgba(var(--text-dark-rgb), 0.8);
+  padding-left: 1rem;
+  border-left: 1px solid var(--teal);
+}
+
+@media (max-width: 1200px) {
+  .sidenote {
+    position: static;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(var(--light-bg-rgb), 0.5);
+    border-left: 3px solid var(--teal);
+  }
+}

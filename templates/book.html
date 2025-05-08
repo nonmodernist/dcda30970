@@ -1,0 +1,121 @@
+{% extends "_base.html" %}
+
+{% block title %}
+  {% if section %}
+    {{ section.title }} | {{ config.title }}
+  {% else %}
+    {{ page.title }} | {{ config.title }}
+  {% endif %}
+{% endblock title %}
+
+{% block description %}
+  {% if section and section.description %}
+    {{ section.description }}
+  {% elif page and page.description %}
+    {{ page.description }}
+  {% endif %}
+{% endblock description %}
+
+{% block content %}
+<div class="book-layout">
+    <!-- Book Header -->
+    <header class="book-header">
+        <h1 class="book-title">
+          {% if section %}
+            {{ section.title }}
+          {% else %}
+            {{ page.title }}
+          {% endif %}
+        </h1>
+        
+        {% if section and section.description %}
+          <p class="book-description">{{ section.description }}</p>
+        {% elif page and page.description %}
+          <p class="book-description">{{ page.description }}</p>
+        {% endif %}
+    </header>
+    
+    <!-- Main Content with Table of Contents -->
+    <div class="book-container">
+        {% if (section and section.extra.toc) or (page and page.extra.toc) %}
+        <aside class="book-toc">
+            <div class="toc-container">
+                <h2>Contents</h2>
+                <ul class="toc-list">
+                    <!-- This will be populated by JavaScript -->
+                </ul>
+            </div>
+        </aside>
+        {% endif %}
+        
+        <article class="book-content">
+          {% if section %}
+            {{ section.content | safe }}
+          {% else %}
+            {{ page.content | safe }}
+          {% endif %}
+        </article>
+    </div>
+    
+    <!-- Book Footer -->
+    <footer class="book-footer">
+        {% if section and section.date %}
+        <time datetime="{{ section.date }}">Last updated: {{ section.date | date(format="%B %d, %Y") }}</time>
+        {% elif page and page.date %}
+        <time datetime="{{ page.date }}">Last updated: {{ page.date | date(format="%B %d, %Y") }}</time>
+        {% endif %}
+        
+        {% if (section and (section.extra.previous_page or section.extra.next_page)) or 
+               (page and (page.extra.previous_page or page.extra.next_page)) %}
+        <div class="book-navigation">
+            {% if section and section.extra.previous_page %}
+            <a href="{{ section.extra.previous_page.permalink }}" class="prev-link">
+                ← {{ section.extra.previous_page.title }}
+            </a>
+            {% elif page and page.extra.previous_page %}
+            <a href="{{ page.extra.previous_page.permalink }}" class="prev-link">
+                ← {{ page.extra.previous_page.title }}
+            </a>
+            {% endif %}
+            
+            {% if section and section.extra.next_page %}
+            <a href="{{ section.extra.next_page.permalink }}" class="next-link">
+                {{ section.extra.next_page.title }} →
+            </a>
+            {% elif page and page.extra.next_page %}
+            <a href="{{ page.extra.next_page.permalink }}" class="next-link">
+                {{ page.extra.next_page.title }} →
+            </a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </footer>
+</div>
+
+<script>
+// Simple JavaScript to generate table of contents
+document.addEventListener('DOMContentLoaded', function() {
+    if (document.querySelector('.book-toc')) {
+        const headings = document.querySelectorAll('.book-content h2, .book-content h3');
+        const tocList = document.querySelector('.toc-list');
+        
+        headings.forEach(function(heading, index) {
+            // Create ID if not exists
+            if (!heading.id) {
+                heading.id = 'section-' + index;
+            }
+            
+            const listItem = document.createElement('li');
+            listItem.classList.add(heading.tagName.toLowerCase() + '-item');
+            
+            const link = document.createElement('a');
+            link.href = '#' + heading.id;
+            link.textContent = heading.textContent;
+            
+            listItem.appendChild(link);
+            tocList.appendChild(listItem);
+        });
+    }
+});
+</script>
+{% endblock content %}

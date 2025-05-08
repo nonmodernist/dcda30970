@@ -1,5 +1,6 @@
 ---
 title: "Meta"
+template: "book.html"
 ---
 
 # First Section
