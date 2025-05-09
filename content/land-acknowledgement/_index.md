@@ -10,17 +10,17 @@ TCU is founded on the traditional and unceded territories of the Wichita and Aff
 The Wichita and Affiliated Tribes are a confederation of tribes that include the Waco, Tawakoni, and Taovaya. The Wichita people have lived in this region for thousands of years, and their history is deeply intertwined with the land. 
 
 We also acknowledge the many other tribes and nations who have lived in this area, including the Caddo Nation, the Comanche Nation, the Kiowa Tribe, and the Osage Nation.
-<!-- <img
-  src="tawakoni-jim.jpg"
-  alt="Two Native American men sit in chairs, with a small Native American boy between them. They are a family grouping of father, son, and grandson."
-  caption="Tawakoni Jim (center) with his grandson and son. Historical photograph."
-> -->
+
+{{ divider(style="geo") }}
 
 ## Honoring Indigenous Resistance
 
+ <img src="/images/tawakonijim.jpg"
+  alt="Two Native American men sit in chairs, with a small Native American boy between them. They are a family grouping of father, son, and grandson."> 
+
 In this course, we especially honor the legacy of Tawakoni Jim (pictured above with his grandson and son), who [led the resistance against the dissolution of communal land rights](https://wichitatribe.com/culture/history/days-of-darkness-1820-1934/) that the United States forced on the Wichita during the late 1800s.
 
-
+{{ divider(style="center") }}
 
 ## Digital Infrastructure & Indigenous Lands
 
@@ -31,6 +31,8 @@ The connections between land acknowledgment and our course on digital infrastruc
 - **Environmental Impact**: The climate crisis disproportionately affects indigenous communities, while many climate solutions draw on indigenous knowledge systems that have been developed over millennia.
 - **Alternative Relationships**: Indigenous perspectives offer alternatives to extractive technological models, suggesting ways of relating to land and resources that prioritize sustainability and reciprocity.
 
+{{ divider(style="center") }}
+
 ## Moving Beyond Acknowledgment
 
 As we examine the materiality of digital culture and its relationship to climate crisis, we commit to:
@@ -40,12 +42,15 @@ As we examine the materiality of digital culture and its relationship to climate
 - Examining how digital infrastructures may perpetuate or challenge colonial patterns of extraction
 - Considering how technology might support indigenous sovereignty and self-determination
 
+{{ divider(style="center") }}
 
 ## Local Resources
 
 - [Wichita and Affiliated Tribes Official Website](https://wichitatribe.com)
 - [TCU's Native American Monument](https://www.tcu.edu/native-american-indigenous-peoples/about/monument.php)
 - [Native American and Indigenous Peoples Day Symposium at TCU](https://stories.tcu.edu/native-american-indigenous-peoples-day)
+
+{{ divider(style="center") }}
 
 ## Digital Resources
 

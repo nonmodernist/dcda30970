@@ -1,5 +1,4 @@
 +++
-author = "Dr. Edwards"
 title = "Week 13: Undrowned"
 date = "2025-11-11"
 description = "Notes on the thirteenth week of DCDA 30970"
@@ -8,6 +7,8 @@ tags = [
     "water",
 ]
 image = ['share.webp']
+[extra]
+  author = "Dr. Edwards"
 +++
 
 

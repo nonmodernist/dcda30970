@@ -1,5 +1,4 @@
 +++
-author = "Dr. Edwards"
 title = "Week 8: Air"
 date = "2025-10-07"
 description = "Notes on the eigth week of DCDA 30970"
@@ -8,6 +7,8 @@ tags = [
     "air",
 ]
 image = ['share.webp']
+[extra]
+  author = "Dr. Edwards"
 +++
 
 

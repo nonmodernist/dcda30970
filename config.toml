@@ -11,9 +11,9 @@ compile_sass = true
 build_search_index = false
 
  taxonomies = [
-#       {name = "tags", feed = true}, # each tag will have its own feed
+       {name = "tags", feed = true}, # each tag will have its own feed
        {name = "categories", paginate_by = 5},  # 5 items per page for a term
-{name = "authors"}, # Basic definition: no feed or pagination
+       {name = "authors"}, # Basic definition: no feed or pagination
     ]
 
 [markdown]
@@ -36,4 +36,4 @@ insert_anchor_links = "none"
 # Special content handling - tell Zola which templates to use for different content types
 [extra.templates]
 page = "book.html"
-blog = "blog.html"  # For blog posts
+blog = "blog-post.html"  # For blog posts

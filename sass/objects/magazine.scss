@@ -1,6 +1,8 @@
 /* Magazine Layout */
 .magazine-layout {
   display: grid;
+  max-width: 85%;
+  margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: var(--space-2xl);
   margin-bottom: var(--space-2xl);

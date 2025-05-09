@@ -1,6 +1,5 @@
 @import '_variables.scss';
 @import '_typography.scss';
-
 @import '_mixins.scss';
 
 @import '_elements.scss';
@@ -13,7 +12,8 @@
 
 @import 'objects/magazine.scss';
 @import 'objects/book.scss';
-@import 'objects/_grid.scss';
+// @import 'objects/_grid.scss';
+@import 'objects/blog.scss';
 
 
 

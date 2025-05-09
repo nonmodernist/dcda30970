@@ -1,5 +1,4 @@
 +++
-author = "Dr. Edwards"
 title = "Week 1: Introduction / Infrastructure"
 date = "2025-08-19"
 description = "Notes on the first week of DCDA 30970"
@@ -7,6 +6,8 @@ tags = [
     "week notes",
 ]
 image = ['share.webp']
+[extra]
+author = ["Dr. Edwards"]
 +++
 Welcome to the course website and blog for **DCDA 30970 - Special Topics: Digital Infrastructure and Climate Crisis**. On this site, you'll find materials related to our course, including my weekly notes, which are intended to help you with coursework, writing, and creativity. You are reading one of these [week notes](../tags/week-notes) posts right now. Be aware that these notes do **not** replace our time in class together.
 

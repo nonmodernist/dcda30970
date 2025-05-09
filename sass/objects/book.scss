@@ -41,7 +41,7 @@
 /* Book Container - this creates the two-column layout */
 .book-container {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) minmax(0, 3fr);
+  grid-template-columns: minmax(250px, 1fr) minmax(0, 3fr);
   gap: 2.5rem;
 }
 

@@ -1,5 +1,4 @@
 +++
-author = "Dr. Edwards"
 title = "Week 2: Fire"
 date = "2025-08-26"
 description = "Notes on the second week of DCDA 30970"
@@ -8,6 +7,8 @@ tags = [
     "fire",
 ]
 image = ['share.webp']
+[extra]
+  author = "Dr. Edwards"
 +++
 
 After our [introductory week](../week-01), the course is organized around the [four classical elements](https://en.wikipedia.org/wiki/Classical_element): fire, earth, air, and water. We begin with fire because it is the dominant conceptual metaphor of the climate crisis. 

@@ -22,7 +22,7 @@
   }
   
   .hero-quote {
-    grid-column: 1 / 6;
+    max-width: 80%;
     border-left: 4px solid var(--yellow);
     padding-left: var(--space-lg);
     font-style: italic;

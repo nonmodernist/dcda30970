@@ -1,0 +1,150 @@
+{% extends "_base.html" %}
+
+{% block title %}Blog | {{ config.title }}{% endblock %}
+
+{% block content %}
+<div class="magazine-layout">
+    <!-- HERO SECTION -->
+    <div class="hero-section gradient-border">
+        <h1 class="hero-title">Blog</h1>
+        <h2 class="hero-subtitle">Reflections on digital infrastructure and climate crisis</h2>
+        
+        <blockquote class="hero-quote">
+            <p>"The goal is not just to write, but to engage with the materiality of technology 
+               through our collective reflections."</p>
+        </blockquote>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <h2>Recent Posts</h2>
+        <p>Browse our latest thoughts and findings on digital infrastructure and climate crisis.</p>
+
+        <!-- Add this somewhere in your template to debug -->
+<div style="background-color: #f8f8f8; padding: 20px; margin: 20px 0; border: 1px solid #ddd;">
+    <h3>Debug Information:</h3>
+    <p>Section path: {{ section.path }}</p>
+    <p>Number of pages: {{ section.pages | length }}</p>
+    <p>Number of subsections: {{ section.subsections | length }}</p>
+    
+    {% if section.pages %}
+        <p>Pages:</p>
+        <ul>
+            {% for page in section.pages %}
+                <li>{{ page.title }} ({{ page.path }})</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No pages in this section</p>
+    {% endif %}
+    
+    {% if section.subsections %}
+        <p>Subsections:</p>
+        <ul>
+            {% for subsection in section.subsections %}
+                <li>{{ subsection }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No subsections</p>
+    {% endif %}
+</div>
+
+<!-- Debug information -->
+<div style="background: #f3f3f3; padding: 20px; margin: 20px 0;">
+    <h3>Detailed Debug Information:</h3>
+    
+    <h4>Section Information:</h4>
+    <p>Section path: {{ section.path }}</p>
+    <p>Section permalink: {{ section.permalink }}</p>
+    
+    <h4>Pages (Direct):</h4>
+    {% if section.pages %}
+        <p>Number of pages: {{ section.pages | length }}</p>
+        <ul>
+            {% for page in section.pages %}
+                <li>{{ page.title }} - {{ page.path }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No pages found using section.pages</p>
+    {% endif %}
+    
+        <div class="blog-list">
+            {% for post in section.pages %}
+                <article class="blog-card {% if post.extra.author == 'Dr. Edwards' %}instructor-post{% else %}student-post{% endif %}">
+                    {% if post.extra.image %}
+                        <img src="{{ post.extra.image }}" alt="Featured image for {{ post.title }}" class="blog-card-image">
+                    {% else %}
+                        <div class="blog-card-placeholder"></div>
+                    {% endif %}
+                    
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">
+                            <a href="{{ post.permalink }}">{{ post.title }}</a>
+                        </h3>
+                        
+                        <div class="blog-card-meta">
+                            <span class="blog-card-author">{{ post.extra.author | default(value="Anonymous") }}</span>
+                            <span class="blog-card-date">{{ post.date | date(format="%B %d, %Y") }}</span>
+                        </div>
+                        
+                        {% if post.description %}
+                            <p class="blog-card-description">{{ post.description }}</p>
+                        {% endif %}
+                        
+                        {% if post.taxonomies and post.taxonomies.tags %}
+                            <div class="blog-card-tags">
+                                {% for tag in post.taxonomies.tags %}
+                                    <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="blog-tag">{{ tag }}</a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Sidebar - Categories -->
+<div class="element-callout earth-theme">
+    <div class="element-content">
+        <h3>Categories</h3>
+        <ul class="category-list">
+            {% set categories = get_taxonomy(kind="categories") %}
+            {% if categories %}
+                {% for term in categories.items %}
+                    <li>
+                        <a href="{{ term.permalink }}">
+                            {{ term.name }}
+                            <span class="post-count">{{ term.pages | length }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            {% else %}
+                <li>No categories found</li>
+            {% endif %}
+        </ul>
+    </div>
+</div>
+
+<!-- Sidebar - Tags -->
+<div class="element-callout air-theme">
+    <div class="element-content">
+        <h3>Popular Tags</h3>
+        <div class="tag-cloud">
+            {% set tags = get_taxonomy(kind="tags") %}
+            {% if tags %}
+                {% for term in tags.items %}
+                    <a href="{{ term.permalink }}" 
+                       class="tag-cloud-item">
+                        {{ term.name }}
+                    </a>
+                {% endfor %}
+            {% else %}
+                <p>No tags found</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
