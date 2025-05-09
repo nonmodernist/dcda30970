@@ -1,6 +1,7 @@
----
-title: "Good Questions"
----
++++
+title = "Good Questions"
+template = "book.html"
++++
 # Asking Good Discussion Questions
 
 This is a list of tips, adapted from Andrew Pilsch who sourced it from [“We Aren’t Here to Learn What We Already Know” by Kyla Wazana Tompkins](http://avidly.lareviewofbooks.org/2016/09/13/we-arent-here-to-learn-what-we-know-we-already-know/), for formulating good discussion questions.

@@ -2,27 +2,26 @@
 title = "Week 1: Introduction / Infrastructure"
 date = "2025-08-19"
 description = "Notes on the first week of DCDA 30970"
-tags = [
-    "week notes",
-]
-image = ['share.webp']
+[taxonomies]
+tags = ["week notes",]
 [extra]
-author = ["Dr. Edwards"]
+author = "Dr. Edwards"
+image = "images/test2.jpeg"
 +++
+
 Welcome to the course website and blog for **DCDA 30970 - Special Topics: Digital Infrastructure and Climate Crisis**. On this site, you'll find materials related to our course, including my weekly notes, which are intended to help you with coursework, writing, and creativity. You are reading one of these [week notes](../tags/week-notes) posts right now. Be aware that these notes do **not** replace our time in class together.
 
 You'll also be contributing to this site as the semester goes along, mostly in the form of blog posts that will appear alongside mine. More on that later. For now, let's start by getting to know each other. 
 
 ## Introduction
+
 When I was still in elementary school, my mom got a job working at the America Online call center in Jacksonville, FL. This was the mid-1990s, when you connected to the internet by having [your modem scream into your home telephone line](https://upload.wikimedia.org/wikipedia/commons/3/33/Dial_up_modem_noises.ogg). AOL charged customers by the hour to use the internet, but we got it for free thanks to my mom's job. 
 
 I fell in love with the internet back when you still had to use command line prompts to tell DOS to launch the Windows GUI. If you don't know what any of that means, well... it was another era. 
 
 <img
-  src="aol.jpg"
-  alt="A floppy disk with a label for America Online"
-  caption="This was the kind of floppy disk we used to install America Online in the mid-90s"
->
+  src="images/aol.jpg"
+  alt="A floppy disk with a label for America Online">
 
 I never thought of myself as a particularly technology-focused kid. I just loved reading websites and bulletin board posts from other parts of the world, from the comfort of the desk near the windows in my grandmother's tiny dining room. Once, my mom was sitting there browsing the web when a storm brought a tree down on the roof right above her. She was fine, and the roof was fixed eventually, and I don't think the internet even went out that day. 
 
@@ -31,6 +30,7 @@ What's your technology origin story? Take a moment to conjure it up in your mind
 I feel the flex and give of my grandmother's [Cesca-style](https://en.wikipedia.org/wiki/Cesca_chair) dining room chairs (the same chairs I fell out of as an infant, breaking my wrist in a way that never fully healed). I see the big boxy beige monitor, but also the jungle of palms and vines separating our house from our neighbors' on the dining room side. I hear the modem scream, and my granny clinking dishes in the kitchen, and my cousin letting the screen door slam as he comes over unannounced. I hear my mom calling my name from some other room of the little house. I smell the salty air of the ocean one block away. 
 
 ### How do you see the internet?
+
 This is an activity adapted from Ingrid Burrington's *Networks of New York*, a book she wrote because, as she explains, "I wanted to know about the stuff that made the Internet work, where it lived, and how I could find it." We'll return to Burrington's work in a couple of weeks, but for now, consider all the various ways there are to answer this question.
 
 Let's use this website as an example of one possible way to answer. To make it, I used a laptop (provided for me by work). I created the site with several pieces of software, which I downloaded from servers somewhere in the world, using my home internet. 

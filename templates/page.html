@@ -1,0 +1,70 @@
+{% extends "_base.html" %}
+
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+
+{% block content %}
+<article class="blog-post {% if page.extra.author == 'Dr. Edwards' %}instructor-post{% else %}student-post{% endif %}">
+    <!-- HEADER -->
+    <header class="blog-post-header">
+        <h1 class="blog-post-title">{{ page.title }}</h1>
+        
+        <div class="blog-post-meta">
+            {% if page.extra.author %}
+            <div class="blog-post-author">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                {{ page.extra.author }}
+            </div>
+            {% endif %}
+            
+            {% if page.date %}
+            <div class="blog-post-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                {{ page.date | date(format="%B %d, %Y") }}
+            </div>
+            {% endif %}
+        </div>
+        
+        {% if page.description %}
+        <div class="blog-post-description">
+            {{ page.description }}
+        </div>
+        {% endif %}
+    </header>
+    
+    <!-- CONTENT -->
+    <div class="blog-post-content">
+        {{ page.content | safe }}
+    </div>
+    
+    <!-- TAGS -->
+ {% if page.taxonomies and page.taxonomies.tags %}
+    <div class="blog-post-tags">
+        <h3>Tags:</h3>
+        <div class="tag-list">
+            {% for tag in page.taxonomies.tags %}
+                <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="blog-tag">{{ tag }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %} 
+    
+    <!-- NAVIGATION -->
+    <nav class="blog-post-navigation">
+        {% if page.higher %}
+        <div class="blog-post-prev">
+            <div class="nav-label">Previous Post</div>
+            <a href="{{ page.higher.permalink }}" class="nav-title">{{ page.higher.title }}</a>
+        </div>
+        {% endif %}
+        
+        {% if page.lower %}
+        <div class="blog-post-next">
+            <div class="nav-label">Next Post</div>
+            <a href="{{ page.lower.permalink }}" class="nav-title">{{ page.lower.title }}</a>
+        </div>
+        {% endif %}
+    </nav>
+</article>
+
+
+{% endblock %}

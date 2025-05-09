@@ -4,10 +4,11 @@
 
 {% block content %}
 <div class="magazine-layout">
+    <div class="main-content">
     <!-- ARCHIVE HEADER -->
     <div class="archive-header">
         <h1 class="archive-title">
-            {{ taxonomy.name | title }}: {{ term.name }}
+            Tag: {{ term.name }}
         </h1>
         
         <div class="archive-description">
@@ -16,12 +17,12 @@
     </div>
     
     <!-- ARCHIVE CONTENT -->
-    <div class="main-content">
+
         <div class="blog-list">
             {% for page in term.pages %}
                 <article class="blog-card {% if page.extra.author == 'Dr. Edwards' %}instructor-post{% else %}student-post{% endif %}">
                     {% if page.extra.image %}
-                        <img src="{{ page.extra.image }}" alt="Featured image for {{ page.title }}" class="blog-card-image">
+                        <img src="{{ config.base_url }}/{{ page.extra.image }}" alt="Featured image for {{ page.title }}" class="blog-card-image">
                     {% endif %}
                     
                     <div class="blog-card-content">
@@ -38,7 +39,7 @@
                             <p class="blog-card-description">{{ page.description }}</p>
                         {% endif %}
                         
-                        {% if page.taxonomies and page.taxonomies.tags %}
+                        {% if page.taxonomies.tags %}
                             <div class="blog-card-tags">
                                 {% for tag in page.taxonomies.tags %}
                                     <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="blog-tag">{{ tag }}</a>
@@ -53,31 +54,7 @@
     
     <!-- SIDEBAR -->
     <aside class="sidebar">
-        <div class="element-callout earth-theme">
-            <div class="element-content">
-                <h3>About {{ term.name }}</h3>
-                <p>These posts explore the concept of {{ term.name }} in relation to digital infrastructure and climate crisis.</p>
-                
-                <div class="taxonomy-stats">
-                    <div class="stat-item">
-                        <span class="stat-value">{{ term.pages | length }}</span>
-                        <span class="stat-label">Posts</span>
-                    </div>
-                    
-                    <div class="stat-item">
-                        {% set authors = [] %}
-                        {% for page in term.pages %}
-                            {% if page.extra.author %}
-                                {% set authors = authors | concat(with=[page.extra.author]) | unique %}
-                            {% endif %}
-                        {% endfor %}
-                        <span class="stat-value">{{ authors | length }}</span>
-                        <span class="stat-label">Contributors</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+
         <div class="element-callout fire-theme">
             <div class="element-content">
                 <h3>Return to Blog</h3>
@@ -88,18 +65,5 @@
     </aside>
 </div>
 
-<!-- PAGINATION -->
-{% if paginator and paginator.pages > 1 %}
-<div class="pagination">
-    {% if paginator.previous %}
-        <a href="{{ paginator.previous }}" class="pagination-prev">← Previous</a>
-    {% endif %}
-    
-    <span class="pagination-current">Page {{ paginator.current_index }} of {{ paginator.pages }}</span>
-    
-    {% if paginator.next %}
-        <a href="{{ paginator.next }}" class="pagination-next">Next →</a>
-    {% endif %}
-</div>
-{% endif %}
+
 {% endblock content %}

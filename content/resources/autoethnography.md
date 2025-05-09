@@ -1,5 +1,7 @@
 ---
 title: "Autoethnography"
+template: "book.html"
+
 ---
 
 # Understanding Autoethnographic Writing

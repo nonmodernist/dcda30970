@@ -1,4 +1,6 @@
----
-title: "Assignments"
----
++++
+title = "Assignments"
+[extra]
+    author = "Dr. Edwards"
++++
 

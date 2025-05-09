@@ -1,5 +1,7 @@
 ---
 title: "How to Post"
+template: "book.html"
+
 ---
 # How to post to this site
 

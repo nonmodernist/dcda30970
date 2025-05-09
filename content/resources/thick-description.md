@@ -1,5 +1,6 @@
 ---
 title: "Thick Description"
+template: "book.html"
 ---
 
 # Understanding Thick Description

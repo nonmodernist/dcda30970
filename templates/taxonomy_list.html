@@ -1,0 +1,80 @@
+{% extends "_base.html" %}
+
+{% block title %}{{ taxonomy.name | title }} | {{ config.title }}{% endblock title %}
+
+{% block content %}
+<div class="book-layout">
+    <header class="book-header">
+        <h1 class="book-title">{{ taxonomy.name | title }}</h1>
+        <p class="book-description">Browse all {{ taxonomy.name }} on this site</p>
+    </header>
+    
+    <div class="taxonomy-list">
+        <ul class="taxonomy-items">
+            {% for term in terms %}
+            <li class="taxonomy-item">
+                <a href="{{ term.permalink }}" class="taxonomy-link">
+                    <span class="taxonomy-name">{{ term.name }}</span>
+                    <span class="taxonomy-count">({{ term.pages | length }})</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="divider gradient-divider">
+        <div class="gradient-line"></div>
+    </div>
+    
+    <div class="back-to-home">
+        <a href="{{ config.base_url }}/">← Back to home</a>
+    </div>
+</div>
+
+<style>
+    .taxonomy-items {
+        list-style: none;
+        padding: 0;
+        margin: var(--space-xl) 0;
+    }
+    
+    .taxonomy-item {
+        margin-bottom: var(--space-md);
+        transition: transform 0.2s ease;
+    }
+    
+    .taxonomy-item:hover {
+        transform: translateX(5px);
+    }
+    
+    .taxonomy-link {
+        display: block;
+        padding: var(--space-md);
+        background-color: rgba(248, 244, 227, 0.5);
+        border-left: 3px solid var(--teal);
+        border-radius: 0 4px 4px 0;
+        transition: background-color 0.3s ease;
+    }
+    
+    .taxonomy-link:hover {
+        background-color: rgba(42, 157, 143, 0.15);
+        border-bottom: none;
+    }
+    
+    .taxonomy-name {
+        font-family: var(--font-heading);
+        font-weight: 600;
+        font-size: var(--fs-lg);
+    }
+    
+    .taxonomy-count {
+        margin-left: var(--space-xs);
+        color: var(--text-dark);
+        opacity: 0.7;
+    }
+    
+    .back-to-home {
+        margin-top: var(--space-xl);
+    }
+</style>
+{% endblock content %}
