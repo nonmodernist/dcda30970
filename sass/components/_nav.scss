@@ -1,0 +1,45 @@
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--text-dark);
+    margin-bottom: var(--space-xl);
+  }
+  
+  .site-title {
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    letter-spacing: 1px;
+    color: var(--dark-bg);
+  
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+    font-weight: normal;
+    opacity: 0.8;
+    margin-top: var(--space-xs);
+    color: var(--deep-blue);
+  }
+  
+  .site-nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .site-nav li {
+    margin-left: var(--space-lg);
+  }
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: var(--space-2xl);
+    padding: var(--space-lg) 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.6);
+  }

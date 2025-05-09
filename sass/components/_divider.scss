@@ -1,25 +1,28 @@
-/* Add this to your static/custom.css file or include in your Sass files */
 
 .divider {
-    margin: 2rem 0;
-    height: 1.5rem;
+    margin: var(--space-xl) 0;
+    height: var(--space-lg);
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  /* Wave Divider */
+  /*----------------------------- 
+  Wave Divider 
+  ------------------------------*/
   .wave-divider svg {
     width: 100%;
     height: 100%;
   }
   
-/* Geometric Lines Divider */
+/*----------------------------- 
+  Geometric Lines Divider 
+ ----------------------------- */
 .geo-divider .geo-lines {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: var(--space-2xs);
   }
   
   .geo-divider .geo-line {
@@ -44,7 +47,9 @@
   .geo-line-15 { width: 20px; background-color: #0E7490; opacity: 0.7; }
   
   
-  /* Center Accent Divider */
+  /*----------------------------- 
+  Center Accent Divider 
+  ----------------------------- */
   .center-divider {
     height: 1rem;
   }
@@ -54,11 +59,13 @@
     height: 8px;
   }
   
-  /* Dots and Dashes Divider */
+  /*-----------------------------  
+  Dots and Dashes Divider 
+  ----------------------------- */
   .dots-divider .dots-container {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-xs);
   }
   
   .dots-divider .dot {
@@ -92,7 +99,9 @@
     background-color: #0E7490; /* Teal */
   }
   
-  /* Edge Waves Divider */
+  /*-----------------------------  
+  Edge Waves Divider 
+  ----------------------------- */
   .edge-divider .edge-container {
     width: 100%;
     display: flex;
@@ -105,7 +114,9 @@
     height: 12px;
   }
   
-  /* Gradient Line Divider */
+  /*-----------------------------  
+  Gradient Line Divider 
+  ----------------------------- */
   .gradient-divider .gradient-line {
     width: 100%;
     height: 1px;
@@ -113,6 +124,10 @@
     opacity: 0.6;
   }
 
+
+  /*----------------------------- 
+  Responsive adjustments
+  ----------------------------- */
 
   @media (max-width: 768px) {
     /* Adjust center divider width for smaller screens */
@@ -128,7 +143,7 @@
     
     /* Reduce dots divider spacing on mobile */
     .dots-divider .dots-container {
-      gap: 4px;
+      gap: var(--space-2xs);
     }
     
     .dots-divider .dash {

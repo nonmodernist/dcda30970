@@ -1,5 +1,48 @@
-@import 'magazine.scss';
-@import 'book.scss';
-@import '_divider.scss';
-@import '_timeline.scss';
-@import '_callouts.scss';
+@import '_variables.scss';
+@import '_typography.scss';
+
+@import '_mixins.scss';
+
+@import '_elements.scss';
+
+@import 'components/_divider.scss';
+@import 'components/_callouts.scss';
+@import 'components/_timeline.scss';
+@import 'components/nav';
+@import 'components/hero';
+
+@import 'objects/magazine.scss';
+@import 'objects/book.scss';
+@import 'objects/_grid.scss';
+
+
+
+// SAMPLE ORGANIZATION
+
+// // ! Settings (variables)
+// // @import "settings/colors";
+// // @import "settings/typography";
+
+// // ! Tools (mixins, functions)
+// // @import "tools/mixins";
+
+// ! Generic (resets, box-sizing)
+// @import "generic/reset";
+// @import "generic/box-sizing";
+
+// ! Elements (HTML elements)
+// @import "elements/headings";
+// @import "elements/links";
+
+// // ! Objects (layout abstractions)
+// // @import "objects/container";
+// // @import "objects/grease-grid";  // Imported grid from Grease
+
+// // ! Components (UI components)
+// // @import "components/buttons";
+// // @import "components/navigation";
+// // @import "components/grease-cards";  // Other Grease components
+
+// ! Utilities (helper classes)
+// @import "utilities/spacing";
+// @import "utilities/visibility";

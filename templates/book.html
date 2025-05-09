@@ -64,7 +64,8 @@
         {% elif page and page.date %}
         <time datetime="{{ page.date }}">Last updated: {{ page.date | date(format="%B %d, %Y") }}</time>
         {% endif %}
-        
+
+<!-- TODO figure out how to set previous page -->
         {% if (section and (section.extra.previous_page or section.extra.next_page)) or 
                (page and (page.extra.previous_page or page.extra.next_page)) %}
         <div class="book-navigation">

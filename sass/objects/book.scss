@@ -2,13 +2,13 @@
 .book-layout {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 var(--space-lg);
 }
 
 /* Book Header */
 .book-header {
   margin-bottom: 2.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: var(--space-md);
   position: relative;
   text-align: center;
 }
@@ -24,15 +24,15 @@
 }
 
 .book-title {
-  font-size: 2.5rem;
+  font-size: var(--fs-h3);
   color: var(--deep-blue);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-xs);
 }
 
 .book-description {
   font-family: var(--font-body);
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: var(--fs-lg);
   color: var(--text-dark);
   opacity: 0.8;
   text-align: center;
@@ -55,23 +55,23 @@
 /* Table of Contents */
 .book-toc {
   position: sticky;
-  top: 2rem;
+  top: var(--space-xl);
   align-self: start;
   max-height: calc(100vh - 4rem);
   overflow-y: auto;
 }
 
 .toc-container {
-  padding: 1.5rem;
+  padding: var(--space-lg);
   background-color: rgba(248, 244, 227, 0.5);
   border-left: 3px solid var(--teal);
   border-radius: 0 4px 4px 0;
 }
 
 .toc-container h2 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
@@ -82,7 +82,7 @@
 }
 
 .toc-list li {
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--space-sm);
   line-height: 1.4;
 }
 
@@ -98,50 +98,51 @@
 }
 
 .h3-item {
-  padding-left: 1rem;
-  font-size: 0.9rem;
+  padding-left: var(--space-md);
+  font-size: var(--fs-md);
 }
 
 /* Book Content */
 .book-content {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: var(--fs-lg);
+line-height: var(--lh-relaxed);
+
 }
 
 .book-content p {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-lg);
 }
 
 .book-content h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-md);
+  font-size: var(--fs-h3);
   color: var(--deep-blue);
   border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding-bottom: 0.5rem;
+  padding-bottom: var(--space-xs);
 }
 
 .book-content h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.4rem;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+  font-size: var(--fs-h5);
   color: var(--teal);
 }
 
 .book-content ul, 
 .book-content ol {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-lg);
   padding-left: 1.8rem;
 }
 
 .book-content li {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-xs);
 }
 
 .book-content blockquote {
   border-left: 4px solid var(--yellow);
-  padding: 0.5rem 0 0.5rem 1.5rem;
-  margin: 1.5rem 0;
+  padding: var(--space-xs) 0 var(--space-xs) var(--space-lg);
+  margin: var(--space-lg) 0;
   font-style: italic;
   color: var(--text-dark);
   opacity: 0.8;
@@ -150,27 +151,27 @@
 .book-content pre {
   background-color: var(--dark-bg);
   color: var(--text-light);
-  padding: 1.5rem;
+  padding: var(--space-lg);
   border-radius: 4px;
   overflow-x: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-lg);
 }
 
 .book-content code {
   font-family: var(--font-mono);
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
 }
 
 .book-content img {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
-  margin: 1.5rem auto;
+  margin: var(--space-lg) auto;
   display: block;
 }
 
 .book-content figure {
-  margin: 2rem 0;
+  margin: var(--space-xl) 0;
 }
 
 .book-content figcaption {
@@ -179,19 +180,19 @@
   text-align: center;
   color: var(--text-dark);
   opacity: 0.7;
-  margin-top: 0.75rem;
+  margin-top: var(--space-sm);
 }
 
 /* Chapter opener styling */
 .chapter-opener {
   position: relative;
-  margin-bottom: 3rem;
-  padding-top: 2rem;
+  margin-bottom: var(--space-2xl);
+  padding-top: var(--space-xl);
 }
 
 .chapter-number {
   font-family: var(--font-heading);
-  font-size: 5rem;
+  font-size: var(--fs-display);
   color: rgba(42, 157, 143, 0.15);
   position: absolute;
   top: -2rem;
@@ -201,23 +202,23 @@
 }
 
 .chapter-title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: var(--fs-h3);
+  margin-bottom: var(--space-md);
 }
 
 .chapter-subtitle {
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: var(--fs-lg);
   opacity: 0.8;
 }
 
 /* Pull quotes */
 .pull-quote {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: var(--fs-h5);
   line-height: 1.4;
-  padding: 1.5rem 0;
-  margin: 2rem 0;
+  padding: var(--space-lg) 0;
+  margin: var(--space-xl) 0;
   position: relative;
   color: var(--deep-blue);
 }
@@ -241,19 +242,19 @@
 }
 
 /* First letter styling */
-.book-content p:first-of-type::first-letter {
-font-size: 2.5rem;
-float: left;
-line-height: .6;
-margin-right: .2rem;
-color: var(--teal);
-font-family: var(--font-body);
-}
+// .book-content p:first-of-type::first-letter {
+// font-size: var(--fs-h5);
+// float: left;
+// line-height: 1.2;
+// margin-right: .2rem;
+// color: var(--teal);
+// font-family: var(--font-body);
+// }
 
 /* Book Footer */
 .book-footer {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
   border-top: 1px solid rgba(0,0,0,0.1);
   font-size: 0.9rem;
   color: var(--text-dark);
@@ -266,8 +267,8 @@ font-family: var(--font-body);
 
 .book-navigation {
   display: flex;
-  gap: 2rem;
-  margin-top: 1rem;
+  gap: var(--space-xl);
+  margin-top: var(--space-md);
 }
 
 .prev-link,
@@ -294,19 +295,19 @@ font-family: var(--font-body);
     position: relative;
     top: 0;
     max-height: none;
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-xl);
   }
   
   .book-title {
-    font-size: 2rem;
+    font-size: var(--fs-h4);
   }
   
   .book-content {
-    font-size: 1rem;
+    font-size: var(--fs-md);
   }
   
   .book-content p:first-of-type::first-letter {
-    font-size: 2rem;
+    font-size: var(--fs-h4);
   }
 }
 
@@ -318,7 +319,7 @@ font-family: var(--font-body);
 
 .sidenote-ref {
   vertical-align: super;
-  font-size: 0.7em;
+  font-size: var(--fs-xs);
   color: var(--teal);
   cursor: pointer;
 }
@@ -327,10 +328,10 @@ font-family: var(--font-body);
   position: absolute;
   right: -250px;
   width: 200px;
-  font-size: 0.8rem;
-  line-height: 1.5;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-normal);
   color: rgba(var(--text-dark-rgb), 0.8);
-  padding-left: 1rem;
+  padding-left: var(--space-md);
   border-left: 1px solid var(--teal);
 }
 
@@ -338,8 +339,8 @@ font-family: var(--font-body);
   .sidenote {
     position: static;
     width: 100%;
-    margin: 1rem 0;
-    padding: 1rem;
+    margin: var(--space-md) 0;
+    padding: var(--space-md);
     background: rgba(var(--light-bg-rgb), 0.5);
     border-left: 3px solid var(--teal);
   }

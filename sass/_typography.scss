@@ -1,0 +1,243 @@
+/* 
+ * Typography and Spacing Variables
+ * For DCDA 30970 Website
+ * 
+ * This system follows a modular scale of 1.25 (major third)
+ * with a base size of 16px (1rem)
+ */
+
+:root {
+  /* 
+   * FONT SIZES 
+   * Following a type scale of 1.25 (major third)
+   */
+  
+  /* Base font size */
+  --fs-base: 1rem;          /* 16px - Base body text */
+  
+  /* Small sizes */
+  --fs-xs: 0.64rem;         /* 10.24px - Legal text, footnotes */
+  --fs-sm: 0.8rem;          /* 12.8px - Secondary text, captions */
+  
+  /* Regular sizes */
+  --fs-md: 1rem;            /* 16px - Body text (same as base) */
+  --fs-lg: 1.25rem;         /* 20px - Large body text, quotes */
+  
+  /* Heading sizes */
+  --fs-h5: 1.563rem;        /* 25px - Small headings */
+  --fs-h4: 1.953rem;        /* 31.25px - Medium headings */
+  --fs-h3: 2.441rem;        /* 39.06px - Large headings */
+  --fs-h2: 3.052rem;        /* 48.83px - Extra large headings */
+  --fs-h1: 3.815rem;        /* 61.04px - Main headings */
+  
+  /* Display sizes for hero elements */
+  --fs-display: 4.768rem;   /* 76.29px - Hero titles, major features */
+  
+  /*
+   * LINE HEIGHTS
+   * Different ratios for different text sizes
+   */
+  
+  /* Tighter for headings */
+  --lh-tight: 1.1;          /* For large headings */
+  --lh-heading: 1.2;        /* For most headings */
+  
+  /* Comfortable for body text */
+  --lh-normal: 1.5;         /* For most body text */
+  --lh-relaxed: 1.65;       /* For larger body text */
+  --lh-loose: 1.8;          /* For smaller body text */
+  
+  /*
+   * SPACING
+   * Using a consistent scale for margins, padding, gaps
+   * Base unit of 0.25rem (4px) with a geometric progression
+   */
+  
+  /* Extra small spacing */
+  --space-3xs: 0.125rem;    /* 2px - Tiny details */
+  --space-2xs: 0.25rem;     /* 4px - Smallest spacing unit */
+  --space-xs: 0.5rem;       /* 8px - Very tight spacing */
+  
+  /* Small to medium spacing */
+  --space-sm: 0.75rem;      /* 12px - Tight spacing */
+  --space-md: 1rem;         /* 16px - Base spacing unit */
+  --space-lg: 1.5rem;       /* 24px - Generous spacing */
+  
+  /* Large spacing */
+  --space-xl: 2rem;         /* 32px - Section spacing */
+  --space-2xl: 3rem;        /* 48px - Large section spacing */
+  --space-3xl: 4rem;        /* 64px - Very large section spacing */
+  
+  /* Extra large spacing for major layout elements */
+  --space-4xl: 6rem;        /* 96px - Page section spacing */
+  --space-5xl: 8rem;        /* 128px - Major layout divisions */
+  
+  /*
+   * LAYOUT SPACING
+   * Specific variables for consistent page layout
+   */
+  
+  /* Component spacing */
+  --component-padding: var(--space-lg);
+  --component-gap: var(--space-md);
+  
+  /* Content width constraints */
+  --content-narrow: 40rem;  /* ~640px - For optimal reading */
+  --content-normal: 60rem;  /* ~960px - General content */
+  --content-wide: 80rem;    /* ~1280px - Full layouts */
+  
+  /* Standardized indentation */
+  --indent-sm: var(--space-md);
+  --indent-md: var(--space-lg);
+  --indent-lg: var(--space-xl);
+  
+  /* Grid system */
+  --grid-gap: var(--space-lg);
+}
+
+/* 
+ * TYPOGRAPHY MIXINS
+ * Common text styles that can be applied consistently
+ */
+
+/* You can convert these to SCSS mixins if using Sass */
+
+.text-xs {
+  font-size: var(--fs-xs);
+  line-height: var(--lh-loose);
+}
+
+.text-sm {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-loose);
+}
+
+.text-md {
+  font-size: var(--fs-md);
+  line-height: var(--lh-normal);
+}
+
+.text-lg {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-normal);
+}
+
+.heading-5 {
+  font-size: var(--fs-h5);
+  line-height: var(--lh-heading);
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.heading-4 {
+  font-size: var(--fs-h4);
+  line-height: var(--lh-heading);
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.heading-3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-heading);
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.heading-2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-tight);
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.heading-1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  font-family: var(--font-heading);
+  font-weight: 800;
+}
+
+.display {
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* 
+ * SPACING HELPERS
+ * Common margin and padding utilities
+ */
+
+/* Margin utilities */
+.m-0 { margin: 0; }
+.m-xs { margin: var(--space-xs); }
+.m-sm { margin: var(--space-sm); }
+.m-md { margin: var(--space-md); }
+.m-lg { margin: var(--space-lg); }
+.m-xl { margin: var(--space-xl); }
+
+/* Margin top */
+.mt-0 { margin-top: 0; }
+.mt-xs { margin-top: var(--space-xs); }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+.mt-2xl { margin-top: var(--space-2xl); }
+.mt-3xl { margin-top: var(--space-3xl); }
+
+/* Margin bottom */
+.mb-0 { margin-bottom: 0; }
+.mb-xs { margin-bottom: var(--space-xs); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+.mb-2xl { margin-bottom: var(--space-2xl); }
+.mb-3xl { margin-bottom: var(--space-3xl); }
+
+/* Padding utilities */
+.p-0 { padding: 0; }
+.p-xs { padding: var(--space-xs); }
+.p-sm { padding: var(--space-sm); }
+.p-md { padding: var(--space-md); }
+.p-lg { padding: var(--space-lg); }
+.p-xl { padding: var(--space-xl); }
+
+/* Padding X-axis (left/right) */
+.px-0 { padding-left: 0; padding-right: 0; }
+.px-xs { padding-left: var(--space-xs); padding-right: var(--space-xs); }
+.px-sm { padding-left: var(--space-sm); padding-right: var(--space-sm); }
+.px-md { padding-left: var(--space-md); padding-right: var(--space-md); }
+.px-lg { padding-left: var(--space-lg); padding-right: var(--space-lg); }
+.px-xl { padding-left: var(--space-xl); padding-right: var(--space-xl); }
+
+/* Padding Y-axis (top/bottom) */
+.py-0 { padding-top: 0; padding-bottom: 0; }
+.py-xs { padding-top: var(--space-xs); padding-bottom: var(--space-xs); }
+.py-sm { padding-top: var(--space-sm); padding-bottom: var(--space-sm); }
+.py-md { padding-top: var(--space-md); padding-bottom: var(--space-md); }
+.py-lg { padding-top: var(--space-lg); padding-bottom: var(--space-lg); }
+.py-xl { padding-top: var(--space-xl); padding-bottom: var(--space-xl); }
+
+/* 
+ * RESPONSIVE ADJUSTMENTS
+ * How to adjust typography and spacing for different screen sizes
+ */
+
+@media (max-width: 768px) {
+  :root {
+    /* Scale down large fonts on mobile */
+    --fs-display: 3.052rem;  /* 48.83px */
+    --fs-h1: 2.441rem;       /* 39.06px */
+    --fs-h2: 1.953rem;       /* 31.25px */
+    --fs-h3: 1.563rem;       /* 25px */
+    
+    /* Adjust spacing for mobile */
+    --space-3xl: 3rem;      /* Reduce from 4rem */
+    --space-2xl: 2rem;      /* Reduce from 3rem */
+    --component-padding: var(--space-md);
+  }
+}

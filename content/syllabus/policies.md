@@ -4,6 +4,8 @@ description: "Important information about attendance, late work, and communicati
 template: "book.html"
 extra:
   toc: true
+  previous_page: 
+  next_page: 
 ---
 
 ## Student Access & Accommodations

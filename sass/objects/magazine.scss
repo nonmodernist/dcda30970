@@ -1,0 +1,88 @@
+/* Magazine Layout */
+.magazine-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+}
+
+/* SEE HERO STYLING IN _hero.scss */
+
+/* Content Columns */
+.main-content {
+  grid-column: 1 / 9;
+  font-size: var(--fs-lg);
+}
+
+.main-content p {
+  margin-bottom: var(--space-lg);
+}
+
+.sidebar {
+  grid-column: 9 / 13;
+  font-size: var(--fs-md);
+}
+
+.sidebar h2 {
+  padding-bottom: var(--space-lg);
+}
+
+.sidebar p {
+  padding-bottom: var(--space-lg);
+}
+
+
+.sidebar-image {
+  margin-bottom: var(--space-lg);
+}
+
+
+// TODO move to correct sheet and incorporate mixins
+
+/* Responsive */
+@media (max-width: 768px) {
+  .magazine-layout {
+      grid-template-columns: 1fr;
+      grid-gap: var(--space-md);
+  }
+  
+  .hero-title {
+      font-size: var(--fs-h3);
+  }
+  
+  .hero-subtitle {
+      font-size: var(--fs-lg);
+      max-width: 100%;
+  }
+  
+  .hero-quote, .main-content, .sidebar {
+      grid-column: span 12;
+  }
+  
+  .issue-info {
+      position: relative;
+      margin-bottom: var(--space-lg);
+      width: fit-content;
+  }
+  
+  .site-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .site-nav {
+      margin-top: var(--space-md);
+      width: 100%;
+  }
+  
+  .site-nav ul {
+      flex-direction: column;
+  }
+  
+  .site-nav li {
+      margin: var(--space-xs) 0;
+      margin-left: 0;
+  }
+}
+
+

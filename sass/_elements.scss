@@ -1,0 +1,67 @@
+/* Base styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    background-color: var(--light-bg);
+    line-height: var(--lh-relaxed);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  p {
+    text-align: justify;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: var(--lh-heading);
+    padding-bottom: var(--space-md);
+  }
+  
+  h1 {
+    font-weight: 800;
+    text-wrap: balance;
+  }
+  
+  a {
+    text-decoration: none;
+    border-bottom: 1.5px dotted var(--deep-blue);
+    color: var(--deep-blue);
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: var(--teal);
+    border-bottom: 1.5px dashed var(--teal);
+  }
+  
+  .external-link::after {
+    content: '↗'; /* Will be replaced with an icon */
+    display: inline-block;
+    width: .8em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0.05em;
+    margin-right: .25em;
+    vertical-align: top;
+  }
+  
+  ul {
+    padding-left: 2em;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }

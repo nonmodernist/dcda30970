@@ -1,13 +1,11 @@
 .timeline-container {
-    font-family: 'Merriweather', 'Source Serif 4', serif;
-    max-width: 800px;
+  font-family: var(--font-body);    
+  max-width: var(--content-normal);
     margin: 0 auto;
-    padding: 20px;
-    color: 
-#333333;
-    background-color: 
-#F8F4E3;
-    line-height: 1.6;
+    padding: var(--space-lg);    
+    color: #333333;
+    background-color: #F8F4E3;
+    line-height: var(--lh-relaxed);
   }
 
   .timeline {
@@ -40,33 +38,17 @@
   .element-header {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: var(--space-md);
     position: relative;
     z-index: 2;
   }
 
-  .element-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    margin-right: 15px;  /* shifted 1px to the right */
-    z-index: 2;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
-
   .element-title {
-    font-family: 'Montserrat', 'Cal Sans', sans-serif;
-    font-size: 2.5em;
+    font-size: var(--fs-h3);
     font-weight: 700;
     margin: 0;
-    color: 
-#333333;
-margin-left: 55px;
+    color: #333333;
+    margin-left: var(--space-2xl);
   }
 
   .timeline-weeks {
@@ -78,7 +60,7 @@ margin-left: 55px;
   .week-item {
     margin-bottom: 30px;
     position: relative;
-    padding: 15px;
+    padding: var(--space-md);
     background-color: 
 #F8F4E3;
     border-radius: 4px;
@@ -123,15 +105,15 @@ margin-left: 55px;
   }
 
   .week-title {
-    font-family: 'Montserrat', 'Cal Sans', sans-serif;
+    font-family: var(--font-heading);
     font-weight: 700;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: var(--fs-lg);
   }
 
   .week-content {
-    margin-bottom: 8px;
-    font-size: 0.95rem;
+    margin-bottom: var(--space-xs);
+    font-size: var(--fs-md);
   }
 
   .deadline {
@@ -141,7 +123,7 @@ var(--light-bg);
     padding: 10px 15px;
     margin-top: 10px;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: var(--fs-md);
     border-radius: 4px;
     font-style: italic;
   }
@@ -177,7 +159,6 @@ var(--light-bg);
     color: var(--text-dark);
   }
 
-  /* Remove border color classes as we're no longer using the secondary line */
 
   .week-item.intro::before {
     background-color: 
@@ -209,6 +190,12 @@ var(--light-bg);
 #FF6B35;
   }
 
+/*---------------------------
+Responsive adjustments
+---------------------------*/
+
+
+
   @media (max-width: 768px) {
     .timeline-container {
       padding: 10px;
@@ -216,14 +203,14 @@ var(--light-bg);
 
     .timeline-weeks {
       margin-left: 40px;
-      padding-left: 15px;
+      padding-left: var(--space-md);
     }
 
     .element-title {
-      font-size: 20px;
+      font-size: var(--fs-lg);
     }
 
     .week-title {
-      font-size: 16px;
+      font-size: var(--fs-md);
     }
   }
